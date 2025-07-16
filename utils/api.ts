@@ -60,9 +60,9 @@ apiClient.interceptors.response.use(
 // Static fallback data for when API is unavailable
 const FALLBACK_DATA = {
   site: {
-    id: 'selfcast-static',
-    title: 'Self Cast Studios',
-    description: 'Professional podcast and media production services',
+    id: 'annie-static',
+    title: 'Annie Sicard',
+    description: 'Environmental sustainability, carbon offsets, and renewable energies',
     
     // Social Media Hub structure
     social: {
@@ -109,62 +109,59 @@ const FALLBACK_DATA = {
       ctaButtonText: 'View All Profiles',
       ctaButtonURL: '#profiles'
     },
-    headline: 'Elevate Your Media Presence',
-    tagline: 'Professional podcast production and media services',
+    headline: 'Building a Sustainable Future',
+    tagline: 'Promoting sustainable solutions for a greener future',
     // Homepage structure with sections
     homepage: {
-      heroSection: {
-        visible: true,
-        headline: 'Elevate Your Media Presence',
-        tagline: 'Professional podcast production and media services',
-        ctaButton: {
-          text: 'Learn More',
-          link: '/about'
-        },
-        secondaryButton: {
-          text: 'Get in Touch',
-          link: '/contact'
+      hero: {
+        title: 'Annie Sicard',
+        subtitle: 'Environmental Sustainability Advocate',
+        ctaText: 'View Projects',
+        ctaLink: '/projects',
+        image: {
+          url: '/images/hero-placeholder.jpg',
+          alt: 'Annie Sicard - Web Designer and Developer'
         }
       },
       aboutSection: {
         visible: true,
         heading: 'About',
-        subheading: 'Personal insights and reflections',
+        subheading: 'My approach to environmental sustainability',
         quoteCard1: {
           visible: true,
-          content: 'Quality production is the foundation of professional podcasting.',
-          author: 'Self Cast Studios',
+          content: 'Sustainability is about finding balance between human needs and preserving our planet for future generations.',
+          author: 'Annie Sicard',
           icon: 'person'
         },
         quoteCard2: {
           visible: true,
-          content: 'Every voice deserves to be heard with crystal clear clarity.',
-          author: 'Self Cast Studios',
+          content: 'I believe in practical solutions that reduce carbon footprints while maintaining quality of life.',
+          author: 'Annie Sicard',
           icon: 'lightbulb'
         },
         quoteCard3: {
           visible: true,
-          content: 'Our approach combines technical expertise with creative storytelling.',
-          author: 'Self Cast Studios',
+          content: 'My work combines environmental expertise with innovative approaches to sustainability challenges.',
+          author: 'Annie Sicard',
           icon: 'briefcase'
         }
       },
       banner1: {
         visible: true,
-        title: 'My Creative Journey',
-        caption: 'Exploring ideas and sharing experiences through content that matters.'
+        title: 'My Sustainability Mission',
+        caption: 'Developing innovative carbon offset initiatives and renewable energy solutions for a greener future.'
       },
       blogPostsSection: {
         visible: true,
-        heading: 'Latest Posts',
-        subheading: 'Insights and updates from our studio',
+        heading: 'Latest Initiatives',
+        subheading: 'Recent environmental sustainability projects and insights',
         showFeaturedOnly: true,
         postsToShow: 3
       },
       banner2: {
         visible: true,
-        title: "Let's Connect",
-        caption: 'Join me on social media to continue the conversation and stay updated.'
+        title: "Join the Movement",
+        caption: 'Connect with me to learn how you can contribute to environmental sustainability efforts.'
       },
       socialMediaSection: {
         visible: true,
@@ -176,12 +173,12 @@ const FALLBACK_DATA = {
     // About page structure
     about: {
       title: 'About Me',
-      subtitle: 'Professional podcast and media production services',
-      contentSubheading: 'About Self Cast Studios',
-      content: 'Self Cast Studios is a premium podcast and media production company dedicated to helping brands, individuals, and organizations tell their stories through high-quality audio and visual content. With state-of-the-art equipment and experienced professionals, we ensure your message reaches your audience with crystal clarity and maximum impact.',
+      subtitle: 'Environmental Sustainability Advocate',
+      contentSubheading: 'About Annie Sicard',
+      content: 'Annie Sicard is a passionate environmental sustainability advocate with over 10 years of experience developing and implementing carbon offset initiatives and renewable energy projects. Specializing in sustainable business practices, environmental impact assessment, and green technology implementation, Annie helps organizations reduce their carbon footprint while maintaining operational efficiency. With a deep understanding of environmental challenges and innovative solutions, she delivers customized sustainability strategies that balance ecological responsibility with practical implementation.',
       contactHeading: 'Contact Information',
       contact: {
-        businessName: 'Self Cast Studios',
+        businessName: 'Annie Sicard',
         email: 'contact@selfcaststudios.com',
         phone: '(555) 123-4567',
         location: 'Denver, CO'
@@ -190,7 +187,7 @@ const FALLBACK_DATA = {
     // Blog page structure
     blog: {
       title: 'Blog',
-      description: 'Explore thoughts, ideas, and insights on a variety of topics.',
+      description: 'Explore insights and developments in environmental sustainability, carbon offsets, and renewable energy.',
       showSearch: true,
       featuredPost: {
         visible: true,
@@ -202,8 +199,8 @@ const FALLBACK_DATA = {
     },
     // Projects page structure
     projects: {
-      title: 'Our Projects',
-      description: 'Explore our featured projects and client work. We take pride in delivering high-quality media productions.',
+      title: 'My Projects',
+      description: 'Explore my featured environmental sustainability initiatives and renewable energy projects. Each project represents my commitment to creating a more sustainable future.',
       showCategories: true,
       gridLayout: 'grid-3',
       cardStyle: 'standard',
@@ -222,91 +219,91 @@ const FALLBACK_DATA = {
   sampleProjects: [
     {
       id: 'project-1',
-      title: 'Business Leadership Podcast Series',
-      slug: 'business-leadership-podcast',
-      description: 'A 12-episode podcast series featuring interviews with industry leaders discussing business strategy and innovation.',
-      content: 'This comprehensive podcast series explores the evolving landscape of business leadership through in-depth interviews with CEOs and founders from various industries. We handled everything from concept development to final production and distribution across major podcast platforms.',
+      title: 'Community Solar Initiative',
+      slug: 'community-solar-initiative',
+      description: 'A collaborative project bringing affordable solar energy to underserved communities through innovative financing models.',
+      content: 'This comprehensive community solar project made renewable energy accessible to over 500 households in low-income neighborhoods. By developing a unique financing model and partnership with local utilities, we were able to reduce energy costs by an average of 30% while eliminating approximately 2,500 tons of carbon emissions annually.',
       featuredImage: {
         url: '/images/sample/project-1.jpg',
-        alt: 'Business Leadership Podcast Series'
+        alt: 'Community Solar Initiative'
       },
-      category: 'Podcast Production',
-      client: 'Global Business Alliance',
+      category: 'Renewable Energy',
+      client: 'Greenlight Community Partners',
       completedAt: '2024-09-15',
       featured: true
     },
     {
       id: 'project-2',
-      title: 'Health and Wellness Video Channel',
-      slug: 'health-wellness-video-channel',
-      description: 'Produced a series of high-quality instructional videos for a health and wellness brand.',
-      content: 'We developed and produced a complete video content strategy for this rising health and wellness brand, including 24 instructional videos, promotional content, and channel branding. The client saw a 215% increase in subscriber count within three months of launch.',
+      title: 'Corporate Carbon Offset Program',
+      slug: 'corporate-carbon-offset-program',
+      description: 'Designed and implemented a comprehensive carbon offset strategy for a Fortune 500 company.',
+      content: 'Working closely with executive leadership, we developed a tailored carbon offset program that aligned with the company\'s operational realities and sustainability goals. The program included emissions measurement protocols, reduction strategies, and investment in verified offset projects. Within the first year, the company achieved carbon neutrality for its direct operations and set a pathway to address supply chain emissions.',
       featuredImage: {
         url: '/images/sample/project-2.jpg',
-        alt: 'Health and Wellness Videos'
+        alt: 'Corporate Carbon Offset Program'
       },
-      category: 'Video Production',
-      client: 'Wellness Collective',
+      category: 'Carbon Offsets',
+      client: 'Nexus Industries',
       completedAt: '2024-08-22',
       featured: true
     },
     {
       id: 'project-3',
-      title: 'Corporate Training Audio Program',
-      slug: 'corporate-training-audio',
-      description: 'Developed a 6-module audio training program for corporate sales teams with accompanying materials.',
-      content: 'This comprehensive audio training program was designed for international sales teams to standardize their approach and messaging. We recorded professional voice talent, created custom sound design, and developed interactive materials to accompany the audio content.',
+      title: 'Sustainable Agriculture Certification',
+      slug: 'sustainable-agriculture-certification',
+      description: 'Created a certification program for sustainable farming practices that reduce environmental impact while maintaining productivity.',
+      content: 'This innovative certification program helps farmers transition to more sustainable practices through a step-by-step implementation framework. The program includes soil health assessment, water conservation techniques, biodiversity enhancement, and reduced chemical inputs. Certified farms have shown an average 40% reduction in environmental impact while maintaining or improving crop yields.',
       featuredImage: {
         url: '/images/sample/project-3.jpg',
-        alt: 'Corporate Training Audio Program'
+        alt: 'Sustainable Agriculture Certification'
       },
-      category: 'Audio Production',
-      client: 'TechSales Inc.',
+      category: 'Sustainable Agriculture',
+      client: 'EcoHarvest Alliance',
       completedAt: '2024-07-10',
       url: 'https://example.com/techsales-training'
     },
     {
       id: 'project-4',
-      title: 'Documentary Film Sound Design',
-      slug: 'documentary-sound-design',
-      description: 'Created complete audio post-production for an award-winning documentary film about climate change.',
-      content: 'Our team handled all aspects of audio post-production for this feature-length documentary, including field recording clean-up, sound design, music supervision, and final mix. The film went on to win awards at multiple film festivals and secured distribution on a major streaming platform.',
+      title: 'Urban Reforestation Initiative',
+      slug: 'urban-reforestation-initiative',
+      description: 'Developed and implemented a city-wide tree planting program to combat urban heat islands and improve air quality.',
+      content: 'This comprehensive urban forestry project transformed underutilized urban spaces into thriving green areas. Working with city planners, community organizations, and corporate sponsors, we planted over 5,000 native trees strategically selected for maximum carbon sequestration and biodiversity support. The initiative has reduced local temperatures by an average of 3°C during summer months and created new habitats for urban wildlife.',
       featuredImage: {
         url: '/images/sample/project-4.jpg',
-        alt: 'Documentary Film Sound Design'
+        alt: 'Urban Reforestation Initiative'
       },
-      category: 'Sound Design',
-      client: 'Horizon Films',
+      category: 'Environmental Restoration',
+      client: 'Metropolitan Planning Commission',
       completedAt: '2024-06-18'
     },
     {
       id: 'project-5',
-      title: 'Weekly Technology News Podcast',
-      slug: 'tech-news-podcast',
-      description: 'Ongoing production of a weekly technology news and analysis podcast with over 50,000 subscribers.',
-      content: 'We provide end-to-end production services for this popular technology news podcast, including recording, editing, music integration, show notes, and publishing. Our consistent quality and reliable workflow have helped the show grow from 5,000 to over 50,000 subscribers in just 18 months.',
+      title: 'Sustainable Supply Chain Transformation',
+      slug: 'sustainable-supply-chain',
+      description: 'Comprehensive supply chain sustainability assessment and transformation for a multinational consumer goods company.',
+      content: 'This project involved a complete analysis and redesign of the client\'s global supply chain operations to reduce environmental impact while maintaining operational efficiency. We conducted carbon footprint assessments across 12 countries, identified key intervention points, and implemented sustainable sourcing practices, packaging redesigns, and logistics optimizations. The initiative resulted in a 35% reduction in supply chain emissions and significant cost savings through reduced waste and energy consumption.',
       featuredImage: {
         url: '/images/sample/project-5.jpg',
-        alt: 'Technology News Podcast'
+        alt: 'Sustainable Supply Chain Transformation'
       },
-      category: 'Podcast Production',
-      client: 'Tech Insider Network',
+      category: 'Corporate Sustainability',
+      client: 'Global Consumer Goods Corp',
       completedAt: '2024-05-01',
       featured: true
     },
     {
       id: 'project-6',
-      title: 'Audiobook Production Series',
-      slug: 'audiobook-series-production',
-      description: 'Full production of a 5-book fantasy series for a publishing company.',
-      content: 'This extensive audiobook project involved casting voice talent, directing performances, editing 60+ hours of content, and delivering final masters that met all technical specifications for major audiobook platforms. The series has become one of the publisher\'s best-selling audio properties.',
+      title: 'Renewable Energy Microgrid Implementation',
+      slug: 'renewable-energy-microgrid',
+      description: 'Designed and implemented a self-sustaining renewable energy microgrid for a remote community.',
+      content: 'This innovative project established a fully independent renewable energy system combining solar arrays, wind turbines, and battery storage to provide reliable power to a previously underserved rural community. The microgrid incorporates smart distribution technology, real-time monitoring, and adaptive load management to optimize energy usage and resilience during extreme weather events. The system now provides clean, affordable electricity to over 200 households while eliminating approximately 500 tons of CO2 emissions annually.',
       featuredImage: {
         url: '/images/sample/project-6.jpg',
-        alt: 'Audiobook Production'
+        alt: 'Renewable Energy Microgrid'
       },
-      category: 'Audio Production',
-      client: 'Evergreen Publishing',
-      completedAt: '2024-03-15'
+      category: 'Renewable Energy',
+      client: 'Rural Communities Alliance',
+      completedAt: '2022-05-15'
     }
   ],
   socialPosts: [
@@ -440,8 +437,8 @@ const FALLBACK_DATA = {
       id: 'instagram-4',
       platform: 'instagram',
       title: 'Team Photo',
-      excerpt: 'Meet the amazing team behind Self Cast Studios! We\'re passionate about...',
-      content: 'Meet the amazing team behind Self Cast Studios! We\'re passionate about helping creators produce high-quality audio content that engages and grows their audience. Book a consultation with us today! #MeetTheTeam #PodcastProducers #AudioProfessionals',
+      excerpt: 'Meet Annie Sicard! I\'m passionate about...',
+      content: 'Meet Annie Sicard! I\'m passionate about creating beautiful digital experiences that engage and delight users. Book a consultation with me today! #WebDesign #UXDesign #DigitalCreator',
       publishedAt: '2025-04-18T09:30:00Z',
       link: 'https://instagram.com/p/selfcaststudios4',
       status: 'published',
@@ -465,7 +462,7 @@ const FALLBACK_DATA = {
       platform: 'facebook',
       title: 'Client Testimonial',
       excerpt: 'Sharing this wonderful testimonial from our client Sarah of The Marketing Mindset Podcast...',
-      content: 'Sharing this wonderful testimonial from our client Sarah of The Marketing Mindset Podcast: "Working with Self Cast Studios transformed my podcast from amateur to professional. The sound quality is amazing, and their guidance on content strategy helped me grow my audience by 400% in just three months!" #ClientTestimonial #PodcastSuccess #AudioProduction',
+      content: 'Sharing this wonderful testimonial from my client Sarah of The Marketing Mindset: "Working with Annie transformed my website from amateur to professional. The design is amazing, and her guidance on content strategy helped me grow my audience by 400% in just three months!" #ClientTestimonial #WebDesign #DigitalSuccess',
       publishedAt: '2025-04-27T15:30:00Z',
       link: 'https://facebook.com/selfcaststudios/posts/2',
       status: 'published',
@@ -498,54 +495,54 @@ const FALLBACK_DATA = {
   blogPosts: [
     {
       id: 'post-1',
-      title: 'The Power of Professional Podcast Production',
-      slug: 'power-of-professional-podcast-production',
-      content: 'High-quality podcast production can significantly elevate your brand presence and audience engagement...',
-      excerpt: 'Discover how professional podcast production can transform your digital presence.',
+      title: 'The Business Case for Carbon Neutrality',
+      slug: 'business-case-carbon-neutrality',
+      content: 'Many businesses view carbon offset initiatives as purely altruistic endeavors, but the reality is that sustainability can significantly improve your bottom line. From energy cost savings to enhanced brand reputation and customer loyalty, this article explores the tangible business benefits of pursuing carbon neutrality...',
+      excerpt: 'Discover how carbon neutrality can benefit your business beyond environmental impact.',
       publishedAt: new Date().toISOString(),
       status: 'published',
-      category: 'Production Tips',
-      featuredImage: { url: '/images/podcast-production.jpg' }
+      category: 'Carbon Offsets',
+      featuredImage: { url: '/images/carbon-neutrality.jpg' }
     },
     {
       id: 'post-2',
-      title: 'Choosing the Right Microphone for Your Podcast',
-      slug: 'choosing-right-microphone-podcast',
-      content: 'The microphone is the foundation of your audio setup. Selecting the right one for your needs is crucial...',
-      excerpt: 'Learn how to select the perfect microphone for your podcast setup.',
+      title: 'Renewable Energy: Myths vs. Reality',
+      slug: 'renewable-energy-myths-reality',
+      content: 'Despite the growing adoption of renewable energy technologies, misconceptions persist about their reliability, cost, and practicality. This article addresses the most common myths surrounding solar, wind, and other renewable energy sources, providing evidence-based perspectives on their current capabilities and limitations...',
+      excerpt: 'Separating fact from fiction in the renewable energy conversation.',
       publishedAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
       status: 'published',
-      category: 'Equipment',
-      featuredImage: { url: '/images/microphones.jpg' }
+      category: 'Renewable Energy',
+      featuredImage: { url: '/images/renewable-energy.jpg' }
     },
     {
       id: 'post-3',
-      title: 'Building a Loyal Podcast Audience',
-      slug: 'building-loyal-podcast-audience',
-      content: 'Growing a dedicated audience takes time, consistency, and strategic planning...',
-      excerpt: 'Effective strategies to grow and maintain a dedicated podcast following.',
+      title: 'Building Resilient Food Systems Through Sustainable Agriculture',
+      slug: 'resilient-food-systems-sustainable-agriculture',
+      content: 'Climate change poses unprecedented challenges to global food security. This article explores how sustainable and regenerative agricultural practices can build resilience in our food systems while simultaneously sequestering carbon and restoring ecosystem health...',
+      excerpt: 'How sustainable farming practices can ensure food security in a changing climate.',
       publishedAt: new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString(),
       status: 'published',
-      category: 'Marketing',
-      featuredImage: { url: '/images/podcast-audience.jpg' }
+      category: 'Sustainable Agriculture',
+      featuredImage: { url: '/images/sustainable-agriculture.jpg' }
     }
   ],
   bioCards: [
     {
       id: 'bio-1',
-      title: 'About Self Cast Studios',
-      content: 'Self Cast Studios is a premium podcast and media production company dedicated to helping brands, individuals, and organizations tell their stories through high-quality audio and visual content. With state-of-the-art equipment and experienced professionals, we ensure your message reaches your audience with crystal clarity and maximum impact.'
+      title: 'About Annie Sicard',
+      content: 'Annie Sicard is a professional designer and developer dedicated to helping brands, individuals, and organizations create beautiful digital experiences and tell their stories through high-quality web content. With state-of-the-art equipment and experienced professionals, we ensure your message reaches your audience with crystal clarity and maximum impact.'
     }
   ],
   quotes: [
     {
       id: 'quote-1',
-      content: 'Working with Self Cast Studios transformed our podcast from an amateur production to a professional showcase. The difference in quality was immediately noticeable to our listeners.',
+      content: 'Working with Annie transformed our website from an amateur design to a professional showcase. The difference in quality was immediately noticeable to our visitors.',
       author: 'Sarah Johnson, Tech Talk Podcast'
     },
     {
       id: 'quote-2',
-      content: 'The team at Self Cast Studios doesn\'t just record and edit - they collaborate with you to elevate your content to new heights.',
+      content: 'Annie doesn\'t just design and develop - she collaborates with you to elevate your digital presence to new heights.',
       author: 'Michael Chen, Marketing Director'
     },
     {
@@ -564,7 +561,7 @@ const FALLBACK_DATA = {
     {
       id: 'media-2',
       url: '/images/profile-picture.jpg',
-      alt: 'Self Cast Studios profile picture',
+      alt: 'Annie Sicard profile picture',
       filename: 'profile-picture.jpg'
     }
   ],
@@ -594,7 +591,7 @@ const FALLBACK_DATA = {
 };
 
 /**
- * Fetch site data for Self Cast Studios
+ * Fetch site data for Annie Sicard
  * This retrieves all necessary content from MongoDB via the Payload CMS API
  * Updated to support the new section-based structure
  */
@@ -616,8 +613,8 @@ export async function fetchSiteData() {
     }
     
     // If API ping succeeded, proceed with actual data fetching
-    // The siteId for Self Cast Studios
-    const siteId = 'selfcast-studios'; 
+    // The siteId for Annie Sicard
+    const siteId = 'annie-sicard'; 
     console.log(`🔍 Using site ID: ${siteId}`);
     
     // Fetch site data with homepage sections using populate to get all nested data
@@ -686,21 +683,21 @@ export async function fetchSiteData() {
           quotes.push({
             id: 'quote-1',
             content: quoteCard1.content,
-            author: quoteCard1.author || 'Self Cast Studios'
+            author: quoteCard1.author || 'Annie Sicard'
           });
         }
         if (quoteCard2?.content) {
           quotes.push({
             id: 'quote-2',
             content: quoteCard2.content,
-            author: quoteCard2.author || 'Self Cast Studios'
+            author: quoteCard2.author || 'Annie Sicard'
           });
         }
         if (quoteCard3?.content) {
           quotes.push({
             id: 'quote-3',
             content: quoteCard3.content,
-            author: quoteCard3.author || 'Self Cast Studios'
+            author: quoteCard3.author || 'Annie Sicard'
           });
         }
       }
