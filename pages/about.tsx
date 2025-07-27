@@ -147,10 +147,15 @@ const AboutPage: React.FC<AboutPageProps> = ({ siteData }) => {
                 
                 <div className="prose prose-lg dark:prose-dark">
                   {aboutData.content ? (
-                    <div className="text-gray-700 dark:text-gray-300">
+                    <div className="text-gray-700 dark:text-gray-300 space-y-4">
                       {typeof aboutData.content === 'string' 
-                        ? aboutData.content 
-                        : 'Annie Website is a premium podcast and media production company dedicated to helping brands, individuals, and organizations tell their stories through high-quality audio and visual content.'}
+                        ? aboutData.content.split('\n\n').map((paragraph, index) => (
+                            <p key={index} className="leading-relaxed">
+                              {paragraph}
+                            </p>
+                          ))
+                        : <p>Annie Website is a premium podcast and media production company dedicated to helping brands, individuals, and organizations tell their stories through high-quality audio and visual content.</p>
+                      }
                     </div>
                   ) : (
                     <p className="text-gray-700 dark:text-gray-300">
