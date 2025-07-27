@@ -223,93 +223,37 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
         </div>
       </section>
       
-      {/* About Section - Using quotes from MongoDB */}
+      {/* About Section - Environmental Sustainability Preview */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-heading text-annie-dark">About</h2>
-            <p className="text-gray-600 mt-2">Personal insights and reflections</p>
+            <h2 className="text-3xl font-bold font-heading text-annie-dark">About Annie</h2>
+            <p className="text-gray-600 mt-2">Environmental Sustainability Advocate</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {quotes && quotes.length > 0 ? (
-              // Map the first three quotes to cards
-              quotes.slice(0, 3).map((quote: any, index: number) => (
-                <div key={quote.id || `quote-${index}`} className="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow flex flex-col h-full">
-                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-annie-primary rounded-full text-white">
-                    {index === 0 && (
-                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                      </svg>
-                    )}
-                    {index === 1 && (
-                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                      </svg>
-                    )}
-                    {index === 2 && (
-                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                    )}
-                  </div>
-                  <div className="flex-grow">
-                    <p className="text-gray-600 mb-4 italic">"{quote.content}"</p>
-                  </div>
-                  <div className="mt-auto">
-                    <h3 className="text-xl font-bold">{quote.author || 'Anonymous'}</h3>
-                  </div>
-                </div>
-              ))
-            ) : (
-              // Fallback cards if no quotes are available
-              <>
-                {/* Bio Card Fallback */}
-                <div className="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow">
-                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-annie-primary rounded-full text-white">
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">My Background</h3>
-                  <p className="text-gray-600">
-                    Personal background and journey information will appear here from the quotes collection.
-                  </p>
-                </div>
-                
-                {/* Skills Card Fallback */}
-                <div className="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow">
-                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-annie-secondary rounded-full text-white">
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">My Philosophy</h3>
-                  <p className="text-gray-600">
-                    Personal philosophies and approach statements will be displayed here from the quotes collection.
-                  </p>
-                </div>
-                
-                {/* Experience Card Fallback */}
-                <div className="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow">
-                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-annie-accent rounded-full text-white">
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">My Approach</h3>
-                  <p className="text-gray-600">
-                    Personal approach statements and methodologies will be shown here from the quotes collection.
-                  </p>
-                </div>
-              </>
-            )}
-          </div>
-          
-          <div className="text-center mt-8">
-            <Link href="/about" className="px-6 py-3 bg-annie-primary text-white font-medium rounded-md hover:bg-annie-primary/90 transition duration-300 shadow-md">
-              Learn More About Me
-            </Link>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8 md:p-12 shadow-lg">
+              <div className="inline-flex items-center justify-center w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-green-600 to-blue-600 rounded-full text-white">
+                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
+                </svg>
+              </div>
+              
+              <div className="prose prose-lg mx-auto">
+                <p className="text-xl text-gray-700 leading-relaxed mb-6">
+                  Annie Sicard is a visionary environmental sustainability advocate whose decade-long journey has been defined by transforming complex environmental challenges into practical, impactful solutions. With over 10 years of hands-on experience developing and implementing carbon offset initiatives and renewable energy projects, she has established herself as a trusted leader in the sustainability space. Her expertise spans from designing comprehensive carbon offset programs for Fortune 500 companies to implementing community-scale renewable energy microgrids that serve hundreds of households.
+                </p>
+              </div>
+              
+              <div className="mt-8">
+                <Link href="/about" className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-600 to-blue-600 text-white font-semibold rounded-lg hover:from-green-700 hover:to-blue-700 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                  <span>Read More About Annie</span>
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
