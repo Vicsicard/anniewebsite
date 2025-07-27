@@ -34,8 +34,8 @@ export async function getServerSideProps() {
       props: { 
         siteData: {
           site: {
-            title: 'Self Cast Studios',
-            description: 'Self Cast Studios Social - Connect with us online'
+            title: 'Annie Sicard',
+            description: 'Annie Sicard Social - Connect with me online'
           },
           socialPosts: []
         }

@@ -26,8 +26,8 @@ export async function getServerSideProps() {
       props: { 
         siteData: {
           site: {
-            title: 'Self Cast Studios',
-            description: 'Self Cast Studios Blog - Latest news and insights'
+            title: 'Annie Sicard',
+            description: 'Annie Sicard Blog - Latest news and insights'
           },
           blogPosts: [],
           media: []
@@ -121,7 +121,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ siteData }) => {
     >
       <div className="bg-white py-16 mt-8">
         <div className="container mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-selfcast-dark mb-4">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-annie-dark mb-4">
             {blogData.title || 'Blog'}
           </h1>
           <p className="text-xl text-gray-600 mb-10 max-w-3xl">
@@ -139,7 +139,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ siteData }) => {
                 <input
                   type="text"
                   placeholder="Search articles..."
-                  className="w-full px-4 py-3 pl-10 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-selfcast-primary focus:border-transparent"
+                  className="w-full px-4 py-3 pl-10 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-annie-primary focus:border-transparent"
                   value={searchTerm}
                   onChange={(e) => {
                     setSearchTerm(e.target.value);
@@ -169,7 +169,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ siteData }) => {
               </div>
               <button 
                 onClick={() => setCurrentPage(1)}
-                className="bg-selfcast-primary hover:bg-selfcast-accent text-white px-6 py-3 rounded-r-md transition-colors font-medium"
+                className="bg-annie-primary hover:bg-annie-accent text-white px-6 py-3 rounded-r-md transition-colors font-medium"
               >
                 Search Blogs
               </button>
@@ -192,7 +192,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ siteData }) => {
                       className="object-cover"
                     />
                   ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-selfcast-primary to-selfcast-secondary flex items-center justify-center">
+                    <div className="w-full h-full bg-gradient-to-br from-annie-primary to-annie-secondary flex items-center justify-center">
                       <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
                       </svg>
@@ -203,7 +203,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ siteData }) => {
                 {/* Content Column (3/5) */}
                 <div className="md:col-span-3 p-8">
                   <div className="flex items-center mb-4">
-                    <span className="bg-selfcast-accent text-white text-xs font-bold px-2 py-1 rounded">
+                    <span className="bg-annie-accent text-white text-xs font-bold px-2 py-1 rounded">
                       Featured
                     </span>
                     {featuredPost.category && (
@@ -214,7 +214,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ siteData }) => {
                   </div>
                   
                   <Link href={`/blog/${featuredPost.slug}`}>
-                    <h2 className="text-2xl md:text-3xl font-heading font-bold text-selfcast-dark mb-4 hover:text-selfcast-primary transition-colors">
+                    <h2 className="text-2xl md:text-3xl font-heading font-bold text-annie-dark mb-4 hover:text-annie-primary transition-colors">
                       {featuredPost.title}
                     </h2>
                   </Link>
@@ -236,7 +236,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ siteData }) => {
                     
                     <Link 
                       href={`/blog/${featuredPost.slug}`}
-                      className="inline-flex items-center text-selfcast-primary font-medium hover:text-selfcast-accent transition-colors"
+                      className="inline-flex items-center text-annie-primary font-medium hover:text-annie-accent transition-colors"
                     >
                       Read Article
                       <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -293,7 +293,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ siteData }) => {
             {searchTerm && (
               <button 
                 onClick={() => setSearchTerm('')}
-                className="px-4 py-2 bg-selfcast-primary text-white rounded-md hover:bg-selfcast-primary/90 transition-colors"
+                className="px-4 py-2 bg-annie-primary text-white rounded-md hover:bg-annie-primary/90 transition-colors"
               >
                 Clear Search
               </button>
@@ -313,7 +313,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ siteData }) => {
                 onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
                 disabled={currentPage === 1}
                 className={`px-4 py-3 border border-gray-200 ${
-                  currentPage === 1 ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-selfcast-primary hover:bg-gray-50'
+                  currentPage === 1 ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-annie-primary hover:bg-gray-50'
                 }`}
               >
                 <div className="flex items-center">
@@ -350,8 +350,8 @@ const BlogPage: React.FC<BlogPageProps> = ({ siteData }) => {
                       onClick={() => handlePageChange(pageNumber)}
                       className={`px-4 py-3 border-t border-b border-gray-200 min-w-[3rem] ${
                         currentPage === pageNumber 
-                          ? 'bg-selfcast-primary text-white font-bold' 
-                          : 'bg-white text-selfcast-dark hover:bg-gray-50'
+                          ? 'bg-annie-primary text-white font-bold' 
+                          : 'bg-white text-annie-dark hover:bg-gray-50'
                       }`}
                     >
                       {pageNumber}
@@ -364,7 +364,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ siteData }) => {
                 onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
                 disabled={currentPage === totalPages}
                 className={`px-4 py-3 border border-gray-200 ${
-                  currentPage === totalPages ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-selfcast-primary hover:bg-gray-50'
+                  currentPage === totalPages ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-annie-primary hover:bg-gray-50'
                 }`}
               >
                 <div className="flex items-center">

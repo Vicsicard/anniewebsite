@@ -1,7 +1,7 @@
-# Self Cast Studios Client Site Production Guide
+# Annie Sicard Portfolio Site Production Guide
 
 ## Project Overview
-This is a production-ready template for Self Cast Studios client-facing websites. It is built on top of the ONE TO RULE THEM ALL CMS system and provides a standardized set of pages and components for client websites.
+This is a production-ready template for Annie Sicard's portfolio website. It is built on top of the ONE TO RULE THEM ALL CMS system and provides a standardized set of pages and components for the portfolio site.
 
 ## Site Pages Structure
 The website contains the 6 required pages:
@@ -50,11 +50,11 @@ The website contains the 6 required pages:
 
 ## Technical Details
 - **Frontend**: Next.js 14
-- **Styling**: TailwindCSS with Self Cast Studios preset colors
+- **Styling**: TailwindCSS with Annie Sicard preset colors
 - **CMS**: Payload CMS
 - **Content API**: REST API from Payload CMS
 - **Authentication**: None required for client-facing site
 - **Forms**: Server-side form handling through API routes
 
 ## Support
-For questions or issues, contact the Self Cast Studios development team or refer to the main ONE TO RULE THEM ALL documentation.
+For questions or issues, contact Annie Sicard or refer to the main ONE TO RULE THEM ALL documentation.

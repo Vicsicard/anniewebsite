@@ -17,8 +17,8 @@ export async function getServerSideProps() {
       props: { 
         siteData: {
           site: {
-            title: 'Self Cast Studios',
-            description: 'Self Cast Studios Projects'
+            title: 'Annie Sicard',
+            description: 'Annie Sicard Projects'
           },
           projects: []
         }
@@ -78,10 +78,10 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
       siteData={siteData}
     >
       {/* Hero Section */}
-      <div className="w-full bg-gradient-to-r from-selfcast-primary/10 to-selfcast-secondary/10 py-16">
+      <div className="w-full bg-gradient-to-r from-annie-primary/10 to-annie-secondary/10 py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-selfcast-dark mb-4">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold text-annie-dark mb-4">
               {pageTitle}
             </h1>
             <p className="text-xl text-gray-600">
@@ -102,7 +102,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                 onClick={() => setActiveFilter(category)}
                 className={`mx-2 mb-2 px-4 py-2 rounded-md transition-colors ${
                   activeFilter === category
-                    ? 'bg-selfcast-primary text-white'
+                    ? 'bg-annie-primary text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -115,7 +115,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
         {/* Featured Projects Section */}
         {projectsData.featuredProjects?.visible && currentPage === 1 && activeFilter === 'all' && (
           <div className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-selfcast-dark text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-annie-dark text-center mb-8">
               {projectsData.featuredProjects.heading || 'Featured Projects'}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -127,7 +127,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                 .slice(0, 3)
                 .map((project: any) => (
                   <div key={project.id} className="group">
-                    <div className="bg-white rounded-xl shadow-md overflow-hidden border-2 border-selfcast-primary/20 transition-all duration-300 group-hover:shadow-xl transform group-hover:-translate-y-1">
+                    <div className="bg-white rounded-xl shadow-md overflow-hidden border-2 border-annie-primary/20 transition-all duration-300 group-hover:shadow-xl transform group-hover:-translate-y-1">
                       {/* Project Image */}
                       <div className="relative h-56 overflow-hidden">
                         {project.featuredImage?.url ? (
@@ -138,7 +138,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                             className="object-cover transform transition-transform duration-500 group-hover:scale-105"
                           />
                         ) : (
-                          <div className="w-full h-full bg-gradient-to-br from-selfcast-primary to-selfcast-secondary flex items-center justify-center text-white">
+                          <div className="w-full h-full bg-gradient-to-br from-annie-primary to-annie-secondary flex items-center justify-center text-white">
                             <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
                             </svg>
@@ -147,7 +147,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                         
                         {/* Featured Badge */}
                         <div className="absolute top-4 left-4">
-                          <span className="bg-selfcast-accent/90 text-white text-xs font-bold px-3 py-1 rounded-full">
+                          <span className="bg-annie-accent/90 text-white text-xs font-bold px-3 py-1 rounded-full">
                             Featured
                           </span>
                         </div>
@@ -155,7 +155,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                         {/* Category Badge */}
                         {project.category && (
                           <div className="absolute top-4 right-4">
-                            <span className="bg-selfcast-primary/90 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            <span className="bg-annie-primary/90 text-white text-xs font-bold px-3 py-1 rounded-full">
                               {project.category}
                             </span>
                           </div>
@@ -164,7 +164,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                       
                       {/* Project Information */}
                       <div className="p-6">
-                        <h3 className="text-xl font-heading font-bold text-selfcast-dark mb-2 group-hover:text-selfcast-primary transition-colors">
+                        <h3 className="text-xl font-heading font-bold text-annie-dark mb-2 group-hover:text-annie-primary transition-colors">
                           {project.title}
                         </h3>
                         
@@ -178,7 +178,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                             href={project.url} 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="inline-flex items-center text-selfcast-primary font-medium hover:text-selfcast-accent transition-colors"
+                            className="inline-flex items-center text-annie-primary font-medium hover:text-annie-accent transition-colors"
                           >
                             View Project
                             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -188,7 +188,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                         ) : (
                           <Link 
                             href={`/projects/${project.slug || project.id}`}
-                            className="inline-flex items-center text-selfcast-primary font-medium hover:text-selfcast-accent transition-colors"
+                            className="inline-flex items-center text-annie-primary font-medium hover:text-annie-accent transition-colors"
                           >
                             View Details
                             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -220,7 +220,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                         className="object-cover transform transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
-                      <div className="w-full h-full bg-gradient-to-br from-selfcast-primary to-selfcast-secondary flex items-center justify-center text-white">
+                      <div className="w-full h-full bg-gradient-to-br from-annie-primary to-annie-secondary flex items-center justify-center text-white">
                         <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
                         </svg>
@@ -230,7 +230,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                     {/* Category Badge */}
                     {project.category && (
                       <div className="absolute top-4 right-4">
-                        <span className="bg-selfcast-accent/90 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        <span className="bg-annie-accent/90 text-white text-xs font-bold px-3 py-1 rounded-full">
                           {project.category}
                         </span>
                       </div>
@@ -239,7 +239,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                   
                   {/* Project Information */}
                   <div className="p-6">
-                    <h3 className="text-xl font-heading font-bold text-selfcast-dark mb-2 group-hover:text-selfcast-primary transition-colors">
+                    <h3 className="text-xl font-heading font-bold text-annie-dark mb-2 group-hover:text-annie-primary transition-colors">
                       {project.title}
                     </h3>
                     
@@ -274,7 +274,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                         href={project.url} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="inline-flex items-center text-selfcast-primary font-medium hover:text-selfcast-accent transition-colors"
+                        className="inline-flex items-center text-annie-primary font-medium hover:text-annie-accent transition-colors"
                       >
                         View Project
                         <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -284,7 +284,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                     ) : (
                       <Link 
                         href={`/projects/${project.slug || project.id}`}
-                        className="inline-flex items-center text-selfcast-primary font-medium hover:text-selfcast-accent transition-colors"
+                        className="inline-flex items-center text-annie-primary font-medium hover:text-annie-accent transition-colors"
                       >
                         View Details
                         <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -312,7 +312,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
             {activeFilter !== 'all' && (
               <button 
                 onClick={() => setActiveFilter('all')}
-                className="px-4 py-2 bg-selfcast-primary text-white rounded-md hover:bg-selfcast-primary/90 transition-colors"
+                className="px-4 py-2 bg-annie-primary text-white rounded-md hover:bg-annie-primary/90 transition-colors"
               >
                 Show All Projects
               </button>
@@ -332,7 +332,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                 onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
                 disabled={currentPage === 1}
                 className={`px-4 py-3 border border-gray-200 ${
-                  currentPage === 1 ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-selfcast-primary hover:bg-gray-50'
+                  currentPage === 1 ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-annie-primary hover:bg-gray-50'
                 }`}
               >
                 <div className="flex items-center">
@@ -369,8 +369,8 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                       onClick={() => handlePageChange(pageNumber)}
                       className={`px-4 py-3 border-t border-b border-gray-200 min-w-[3rem] ${
                         currentPage === pageNumber 
-                          ? 'bg-selfcast-primary text-white font-bold' 
-                          : 'bg-white text-selfcast-dark hover:bg-gray-50'
+                          ? 'bg-annie-primary text-white font-bold' 
+                          : 'bg-white text-annie-dark hover:bg-gray-50'
                       }`}
                     >
                       {pageNumber}
@@ -383,7 +383,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
                 onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
                 disabled={currentPage === totalPages}
                 className={`px-4 py-3 border border-gray-200 ${
-                  currentPage === totalPages ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-selfcast-primary hover:bg-gray-50'
+                  currentPage === totalPages ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-annie-primary hover:bg-gray-50'
                 }`}
               >
                 <div className="flex items-center">
@@ -399,7 +399,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
         
         {/* Call to Action Section */}
         {projectsData.showCTA && (
-          <div className="bg-gradient-to-r from-selfcast-primary to-selfcast-secondary rounded-xl py-12 px-8 mt-16 text-center">
+          <div className="bg-gradient-to-r from-annie-primary to-annie-secondary rounded-xl py-12 px-8 mt-16 text-center">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl font-heading font-bold text-white mb-4">
                 {projectsData.ctaHeading || 'Ready to Start Your Project?'}
@@ -409,7 +409,7 @@ const ProjectsPage: React.FC<{ siteData: any }> = ({ siteData }) => {
               </p>
               <Link 
                 href={projectsData.ctaButtonURL || '/contact'}
-                className="inline-block bg-white text-selfcast-primary font-bold px-8 py-4 rounded-md hover:bg-gray-100 transition-colors"
+                className="inline-block bg-white text-annie-primary font-bold px-8 py-4 rounded-md hover:bg-gray-100 transition-colors"
               >
                 {projectsData.ctaButtonText || 'Contact Us'}
               </Link>

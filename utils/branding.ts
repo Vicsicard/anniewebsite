@@ -20,7 +20,7 @@ export const getBrandingInfo = (siteData: any) => {
     logo: site.branding?.logo || null,
     primaryColor: site.branding?.primaryColor || '#0047AB',
     copyrightText: site.branding?.copyrightText || '© Copyright',
-    siteTitle: site.title || 'Self Cast Studios',
-    siteTagline: site.subtitle || 'Personal Branding Platform',
+    siteTitle: site.title || 'Annie Sicard',
+    siteTagline: site.subtitle || 'Web Design & Development',
   };
 };

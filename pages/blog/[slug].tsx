@@ -63,18 +63,18 @@ const BlogPostPage = ({ post, siteData }: { post: any, siteData: any }) => {
       siteData={siteData}
     >
       {/* Hero Section */}
-      <div className="w-full bg-gradient-to-r from-selfcast-primary/10 to-selfcast-secondary/10 py-16">
+      <div className="w-full bg-gradient-to-r from-annie-primary/10 to-annie-secondary/10 py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             {/* Navigation Breadcrumb */}
             <div className="flex items-center mb-8 text-sm text-gray-600">
-              <Link href="/" className="hover:text-selfcast-primary transition-colors">
+              <Link href="/" className="hover:text-annie-primary transition-colors">
                 Home
               </Link>
               <svg className="w-3 h-3 mx-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
               </svg>
-              <Link href="/blog" className="hover:text-selfcast-primary transition-colors">
+              <Link href="/blog" className="hover:text-annie-primary transition-colors">
                 Blog
               </Link>
               <svg className="w-3 h-3 mx-2" fill="currentColor" viewBox="0 0 20 20">
@@ -88,14 +88,14 @@ const BlogPostPage = ({ post, siteData }: { post: any, siteData: any }) => {
             {/* Category Badge */}
             {post?.category && (
               <div className="mb-6">
-                <span className="inline-block bg-selfcast-accent text-white text-xs font-bold px-3 py-1 rounded-full">
+                <span className="inline-block bg-annie-accent text-white text-xs font-bold px-3 py-1 rounded-full">
                   {post.category}
                 </span>
               </div>
             )}
             
             {/* Post Title */}
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-selfcast-dark mb-6">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold text-annie-dark mb-6">
               {post?.title}
             </h1>
             
@@ -216,7 +216,7 @@ const BlogPostPage = ({ post, siteData }: { post: any, siteData: any }) => {
           {/* Author Bio */}
           {post?.author && (
             <div className="mt-12 bg-gray-50 rounded-xl p-6 border border-gray-100">
-              <h3 className="text-xl font-bold text-selfcast-dark mb-3">About the Author</h3>
+              <h3 className="text-xl font-bold text-annie-dark mb-3">About the Author</h3>
               <div className="flex flex-col md:flex-row items-start gap-4">
                 {post.authorImage?.url && (
                   <div className="w-16 h-16 rounded-full overflow-hidden">
@@ -230,7 +230,7 @@ const BlogPostPage = ({ post, siteData }: { post: any, siteData: any }) => {
                   </div>
                 )}
                 <div>
-                  <h4 className="text-lg font-medium text-selfcast-dark mb-2">{post.author}</h4>
+                  <h4 className="text-lg font-medium text-annie-dark mb-2">{post.author}</h4>
                   {post.authorBio && (
                     <p className="text-gray-600">{post.authorBio}</p>
                   )}
@@ -242,7 +242,7 @@ const BlogPostPage = ({ post, siteData }: { post: any, siteData: any }) => {
           {/* Related Posts */}
           {relatedPosts.length > 0 && (
             <div className="mt-16">
-              <h3 className="text-2xl font-heading font-bold text-selfcast-dark mb-8">Related Articles</h3>
+              <h3 className="text-2xl font-heading font-bold text-annie-dark mb-8">Related Articles</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {relatedPosts.map((relatedPost: any) => (
                   <div key={relatedPost.id} className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
@@ -255,7 +255,7 @@ const BlogPostPage = ({ post, siteData }: { post: any, siteData: any }) => {
                           className="object-cover"
                         />
                       ) : (
-                        <div className="w-full h-full bg-gradient-to-r from-selfcast-primary to-selfcast-secondary flex items-center justify-center text-white">
+                        <div className="w-full h-full bg-gradient-to-r from-annie-primary to-annie-secondary flex items-center justify-center text-white">
                           <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
                           </svg>
@@ -263,7 +263,7 @@ const BlogPostPage = ({ post, siteData }: { post: any, siteData: any }) => {
                       )}
                     </div>
                     <div className="p-4">
-                      <h4 className="text-lg font-bold text-gray-900 mb-2 hover:text-selfcast-primary transition-colors">
+                      <h4 className="text-lg font-bold text-gray-900 mb-2 hover:text-annie-primary transition-colors">
                         <Link href={`/blog/${relatedPost.slug}`}>
                           {relatedPost.title}
                         </Link>
@@ -277,7 +277,7 @@ const BlogPostPage = ({ post, siteData }: { post: any, siteData: any }) => {
                       </p>
                       <Link 
                         href={`/blog/${relatedPost.slug}`}
-                        className="inline-flex items-center text-selfcast-primary font-medium hover:text-selfcast-accent transition-colors text-sm"
+                        className="inline-flex items-center text-annie-primary font-medium hover:text-annie-accent transition-colors text-sm"
                       >
                         Read Article
                         <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -296,7 +296,7 @@ const BlogPostPage = ({ post, siteData }: { post: any, siteData: any }) => {
             <div className="flex flex-col md:flex-row justify-between">
               <button 
                 onClick={() => router.back()}
-                className="flex items-center text-selfcast-primary hover:text-selfcast-accent transition-colors mb-4 md:mb-0"
+                className="flex items-center text-annie-primary hover:text-annie-accent transition-colors mb-4 md:mb-0"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -306,7 +306,7 @@ const BlogPostPage = ({ post, siteData }: { post: any, siteData: any }) => {
               
               <Link 
                 href="/contact"
-                className="flex items-center text-selfcast-primary hover:text-selfcast-accent transition-colors"
+                className="flex items-center text-annie-primary hover:text-annie-accent transition-colors"
               >
                 Have questions?
                 <span className="mx-1">Contact us</span>

@@ -37,8 +37,8 @@ export async function getServerSideProps() {
       props: { 
         siteData: {
           site: {
-            title: 'Self Cast Studios',
-            description: 'Professional podcast and media production services',
+            title: 'Annie Sicard',
+            description: 'Professional portfolio and personal website',
           },
           blogPosts: [],
           bioCards: [],
@@ -99,7 +99,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
           </div>
           
           <p className="mb-6 text-gray-700">
-            We encountered an issue while loading the Self Cast Studios homepage.
+            We encountered an issue while loading Annie Sicard's homepage.
           </p>
           
           <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
@@ -128,8 +128,8 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
     return (
       <div className="min-h-screen flex items-center justify-center bg-white">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-selfcast-primary mx-auto"></div>
-          <p className="mt-4 text-xl font-medium text-gray-700">Loading Self Cast Studios...</p>
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-annie-primary mx-auto"></div>
+          <p className="mt-4 text-xl font-medium text-gray-700">Loading Annie Sicard's Portfolio...</p>
         </div>
       </div>
     );
@@ -175,23 +175,23 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
   console.log(' Rendering homepage with complete data');
 
   return (
-    <Layout title="Home" description={site?.description || "Welcome to Self Cast Studios"} siteData={siteData}>
+    <Layout title="Home" description={site?.description || "Welcome to Annie Sicard's Portfolio"} siteData={siteData}>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-selfcast-primary to-selfcast-accent py-12 md:py-20">
+      <section className="relative bg-gradient-to-br from-annie-primary to-annie-accent py-12 md:py-20">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="container relative z-10 mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6 text-white">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold">
-                {site?.headline || site?.title || 'Welcome to Self Cast Studios'}
+                {site?.headline || site?.title || 'Welcome to Annie Sicard'}
               </h1>
               
               <p className="text-xl opacity-90">
-                {site?.tagline || aboutMeCard?.content || site?.description || 'Professional podcast and media production services.'}
+                {site?.tagline || aboutMeCard?.content || site?.description || 'Professional portfolio and personal website.'}
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <Link href="/about" className="px-6 py-3 bg-white text-selfcast-primary font-medium rounded-md hover:bg-opacity-90 transition duration-300 shadow-md">
+                <Link href="/about" className="px-6 py-3 bg-white text-annie-primary font-medium rounded-md hover:bg-opacity-90 transition duration-300 shadow-md">
                   Learn More
                 </Link>
                 <Link href="/contact" className="px-6 py-3 bg-transparent border-2 border-white text-white font-medium rounded-md hover:bg-white/10 transition duration-300">
@@ -205,7 +205,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
                 <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
                   <Image 
                     src={profilePicture.url} 
-                    alt={profilePicture.alt || 'Self Cast Studios'} 
+                    alt={profilePicture.alt || 'Annie Sicard'} 
                     width={320}
                     height={320}
                     className="object-cover"
@@ -227,7 +227,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-heading text-selfcast-dark">About</h2>
+            <h2 className="text-3xl font-bold font-heading text-annie-dark">About</h2>
             <p className="text-gray-600 mt-2">Personal insights and reflections</p>
           </div>
           
@@ -236,7 +236,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
               // Map the first three quotes to cards
               quotes.slice(0, 3).map((quote: any, index: number) => (
                 <div key={quote.id || `quote-${index}`} className="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow flex flex-col h-full">
-                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-selfcast-primary rounded-full text-white">
+                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-annie-primary rounded-full text-white">
                     {index === 0 && (
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -266,7 +266,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
               <>
                 {/* Bio Card Fallback */}
                 <div className="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow">
-                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-selfcast-primary rounded-full text-white">
+                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-annie-primary rounded-full text-white">
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
@@ -279,7 +279,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
                 
                 {/* Skills Card Fallback */}
                 <div className="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow">
-                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-selfcast-secondary rounded-full text-white">
+                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-annie-secondary rounded-full text-white">
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                     </svg>
@@ -292,7 +292,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
                 
                 {/* Experience Card Fallback */}
                 <div className="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow">
-                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-selfcast-accent rounded-full text-white">
+                  <div className="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-annie-accent rounded-full text-white">
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
@@ -307,7 +307,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
           </div>
           
           <div className="text-center mt-8">
-            <Link href="/about" className="px-6 py-3 bg-selfcast-primary text-white font-medium rounded-md hover:bg-selfcast-primary/90 transition duration-300 shadow-md">
+            <Link href="/about" className="px-6 py-3 bg-annie-primary text-white font-medium rounded-md hover:bg-annie-primary/90 transition duration-300 shadow-md">
               Learn More About Me
             </Link>
           </div>
@@ -335,7 +335,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
             <div className="absolute inset-0 bg-black bg-opacity-30"></div>
           </div>
         ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-selfcast-primary to-selfcast-accent">
+          <div className="absolute inset-0 bg-gradient-to-br from-annie-primary to-annie-accent">
             <div className="absolute inset-0" style={{ 
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'40\' height=\'40\' viewBox=\'0 0 40 40\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'20\' cy=\'20\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E")', 
               backgroundSize: '30px 30px' 
@@ -361,7 +361,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold font-heading text-selfcast-dark">Latest Posts</h2>
+              <h2 className="text-3xl font-bold font-heading text-annie-dark">Latest Posts</h2>
               <p className="text-gray-600 mt-2">Insights and updates from our studio</p>
             </div>
             
@@ -381,7 +381,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
             </div>
             
             <div className="text-center mt-12">
-              <Link href="/blog" className="px-6 py-3 bg-selfcast-primary text-white font-medium rounded-md hover:bg-selfcast-primary/90 transition duration-300 shadow-md">
+              <Link href="/blog" className="px-6 py-3 bg-annie-primary text-white font-medium rounded-md hover:bg-annie-primary/90 transition duration-300 shadow-md">
                 View All Posts
               </Link>
             </div>
@@ -410,7 +410,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
             <div className="absolute inset-0 bg-black bg-opacity-30"></div>
           </div>
         ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-selfcast-primary to-selfcast-accent">
+          <div className="absolute inset-0 bg-gradient-to-br from-annie-primary to-annie-accent">
             <div className="absolute inset-0" style={{ 
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'40\' height=\'40\' viewBox=\'0 0 40 40\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'20\' cy=\'20\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E")', 
               backgroundSize: '30px 30px' 
@@ -435,7 +435,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-heading text-selfcast-dark">Social Media</h2>
+            <h2 className="text-3xl font-bold font-heading text-annie-dark">Social Media</h2>
             <p className="text-gray-600 mt-2">Connect with me across platforms</p>
           </div>
           
@@ -566,7 +566,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
           </div>
           
           <div className="text-center mt-12">
-            <Link href="/social" className="px-6 py-3 bg-selfcast-primary text-white font-medium rounded-md hover:bg-selfcast-primary/90 transition duration-300 shadow-md">
+            <Link href="/social" className="px-6 py-3 bg-annie-primary text-white font-medium rounded-md hover:bg-annie-primary/90 transition duration-300 shadow-md">
               View All Social Posts
             </Link>
           </div>
@@ -574,12 +574,12 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-selfcast-primary to-selfcast-accent text-white">
+      <section className="py-20 bg-gradient-to-br from-annie-primary to-annie-accent text-white">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to elevate your media presence?</h2>
             <p className="text-xl mb-8 opacity-90">Contact our team today for professional podcast and media production services.</p>
-            <Link href="/contact" className="px-8 py-4 bg-white text-selfcast-primary font-medium rounded-md hover:bg-opacity-90 transition-all shadow-lg inline-block">
+            <Link href="/contact" className="px-8 py-4 bg-white text-annie-primary font-medium rounded-md hover:bg-opacity-90 transition-all shadow-lg inline-block">
               Get Started
             </Link>
           </div>

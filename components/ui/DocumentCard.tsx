@@ -42,7 +42,7 @@ const DocumentCard: React.FC<DocumentCardProps> = ({
             className="object-cover transform hover:scale-105 transition-transform duration-500"
           />
         ) : (
-          <div className="w-full h-full bg-gradient-to-r from-selfcast-primary to-selfcast-secondary flex items-center justify-center text-white">
+          <div className="w-full h-full bg-gradient-to-r from-annie-primary to-annie-secondary flex items-center justify-center text-white">
             <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
             </svg>
@@ -50,7 +50,7 @@ const DocumentCard: React.FC<DocumentCardProps> = ({
         )}
         
         {category && (
-          <span className="absolute top-3 right-3 bg-selfcast-accent text-white text-xs font-bold px-2 py-1 rounded-md">
+          <span className="absolute top-3 right-3 bg-annie-accent text-white text-xs font-bold px-2 py-1 rounded-md">
             {category}
           </span>
         )}
@@ -59,7 +59,7 @@ const DocumentCard: React.FC<DocumentCardProps> = ({
       {/* Content Section */}
       <div className="p-6">
         <Link href={`/blog/${slug}`}>
-          <h3 className="text-xl font-heading font-bold text-selfcast-dark mb-2 hover:text-selfcast-primary transition-colors">
+          <h3 className="text-xl font-heading font-bold text-annie-dark mb-2 hover:text-annie-primary transition-colors">
             {title}
           </h3>
         </Link>

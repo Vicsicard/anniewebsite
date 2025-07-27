@@ -1,4 +1,4 @@
-/* Animation utilities for the Self Cast Studios client site */
+/* Animation utilities for the Annie Sicard website */
 
 /* Fade-in up animation */
 @keyframes fadeInUp {
@@ -133,7 +133,7 @@
 /* Pulse animation */
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(0, 71, 171, 0.4); /* selfcast-primary */
+    box-shadow: 0 0 0 0 rgba(0, 71, 171, 0.4); /* annie-primary */
   }
   70% {
     box-shadow: 0 0 0 10px rgba(0, 71, 171, 0);

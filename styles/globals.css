@@ -11,10 +11,10 @@
   --text: #202020;
 }
 
-/* Self Cast Studios Brand Styles */
+/* Annie Sicard Brand Styles */
 @layer base {
   body {
-    @apply bg-selfcast-light text-selfcast-dark;
+    @apply bg-annie-light text-annie-dark;
     font-family: 'Inter', sans-serif;
   }
 
@@ -35,28 +35,28 @@
   }
 
   a {
-    @apply text-selfcast-primary hover:text-selfcast-accent transition-colors;
+    @apply text-annie-primary hover:text-annie-accent transition-colors;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-selfcast-primary text-white px-6 py-2 rounded hover:bg-opacity-90 transition-all;
+    @apply bg-annie-primary text-white px-6 py-2 rounded hover:bg-opacity-90 transition-all;
   }
 
   .btn-secondary {
-    @apply bg-selfcast-secondary text-white px-6 py-2 rounded hover:bg-opacity-90 transition-all;
+    @apply border-annie-secondary text-white px-6 py-2 rounded hover:bg-opacity-90 transition-all;
   }
 
   .btn-accent {
-    @apply bg-selfcast-accent text-white px-6 py-2 rounded hover:bg-opacity-90 transition-all;
+    @apply bg-annie-accent text-white px-6 py-2 rounded hover:bg-opacity-90 transition-all;
   }
 
   .card {
     @apply bg-white rounded-lg shadow-md p-6;
   }
 
-  .container-selfcast {
+  .container-annie {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   
@@ -76,7 +76,7 @@
   }
   
   .section-title {
-    @apply text-3xl font-heading font-bold text-selfcast-dark mb-6;
+    @apply text-3xl font-heading font-bold text-annie-dark mb-6;
   }
   
   .section-subtitle {
@@ -85,12 +85,12 @@
   
   /* Enhanced link styles */
   .link-with-arrow {
-    @apply inline-flex items-center text-selfcast-primary font-medium animated-underline;
+    @apply inline-flex items-center text-annie-primary font-medium animated-underline;
   }
   
   /* Form styles */
   .form-input {
-    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-selfcast-primary focus:border-transparent;
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-annie-primary focus:border-transparent;
   }
   
   .form-label {
@@ -98,6 +98,6 @@
   }
   
   .form-button {
-    @apply w-full bg-selfcast-primary text-white font-medium py-2 px-4 rounded-md hover:bg-selfcast-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-selfcast-primary;
+    @apply w-full bg-annie-primary text-white font-medium py-2 px-4 rounded-md hover:bg-annie-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-annie-primary;
   }
 }

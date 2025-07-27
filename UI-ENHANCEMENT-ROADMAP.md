@@ -1,6 +1,6 @@
-# Self Cast Studios Client Site - UI Enhancement Roadmap
+# Annie Sicard Portfolio Site - UI Enhancement Roadmap
 
-This document outlines the planned UI enhancements for the Self Cast Studios client-facing website template. This serves as a reference for development and ensures we maintain focus on creating a polished yet streamlined experience.
+This document outlines the planned UI enhancements for Annie Sicard's portfolio website. This serves as a reference for development and ensures we maintain focus on creating a polished yet streamlined experience.
 
 ## Core Design Principles
 - **Simplicity First**: Provide essential customization without overwhelming clients

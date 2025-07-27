@@ -22,8 +22,8 @@ export async function getServerSideProps() {
       props: { 
         siteData: {
           site: {
-            title: 'Self Cast Studios',
-            description: 'About Self Cast Studios - Professional podcast and media production'
+            title: 'Annie Website',
+            description: 'About Annie Website - Professional podcast and media production'
           },
           media: []
         }
@@ -60,7 +60,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ siteData }) => {
       <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-annie-dark dark:text-white mb-6">
               {aboutData.title || 'About Me'}
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -92,7 +92,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ siteData }) => {
               
               {/* Contact Information */}
               <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-annie-dark dark:text-white mb-4">
                   {aboutData.contactHeading || 'Contact Information'}
                 </h3>
                 <ul className="space-y-3">
@@ -141,20 +141,20 @@ const AboutPage: React.FC<AboutPageProps> = ({ siteData }) => {
             <div className="md:col-span-2 space-y-12">
               {/* About Me Section */}
               <div className="space-y-6">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 pb-2">
-                  {aboutData.contentSubheading || 'About Self Cast Studios'}
+                <h2 className="text-2xl font-bold text-annie-dark dark:text-white border-gray-200 dark:border-gray-700 pb-2">
+                  {aboutData.contentSubheading || 'About Annie Website'}
                 </h2>
                 
-                <div className="prose max-w-none dark:prose-dark">
+                <div className="prose prose-lg dark:prose-dark">
                   {aboutData.content ? (
                     <div className="text-gray-700 dark:text-gray-300">
                       {typeof aboutData.content === 'string' 
                         ? aboutData.content 
-                        : 'Self Cast Studios is a premium podcast and media production company dedicated to helping brands, individuals, and organizations tell their stories through high-quality audio and visual content.'}
+                        : 'Annie Website is a premium podcast and media production company dedicated to helping brands, individuals, and organizations tell their stories through high-quality audio and visual content.'}
                     </div>
                   ) : (
                     <p className="text-gray-700 dark:text-gray-300">
-                      Self Cast Studios is a premium podcast and media production company dedicated to helping brands, individuals, and organizations tell their stories through high-quality audio and visual content. With state-of-the-art equipment and experienced professionals, we ensure your message reaches your audience with crystal clarity and maximum impact.
+                      Annie Sicard is a professional designer and developer dedicated to helping brands, individuals, and organizations create beautiful digital experiences and tell their stories through high-quality web content. With modern design principles and technical expertise, I ensure your message reaches your audience with visual impact and optimal user experience.
                     </p>
                   )}
                 </div>

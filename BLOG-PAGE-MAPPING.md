@@ -1,6 +1,6 @@
 # Blog Page Mapping
 
-This document provides a mapping between the Self Cast Studios website Blog page UI components, Payload CMS admin fields, and MongoDB storage structure. This will help ensure that content editors have a clear understanding of how their edits in the CMS admin interface affect the website.
+This document provides a mapping between Annie Sicard's website Blog page UI components, Payload CMS admin fields, and MongoDB storage structure. This will help ensure that content editors have a clear understanding of how their edits in the CMS admin interface affect the website.
 
 ## Blog Page Section Mapping
 

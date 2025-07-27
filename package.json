@@ -1,7 +1,7 @@
 {
-  "name": "selfcast-client-site",
+  "name": "annie-sicard-portfolio",
   "version": "1.0.0",
-  "description": "Self Cast Studios client-facing website generated from the ONE TO RULE THEM ALL CMS system",
+  "description": "Annie Sicard personal portfolio website generated from the ONE TO RULE THEM ALL CMS system",
   "private": true,
   "scripts": {
     "dev": "next dev -p 7777",

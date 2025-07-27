@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ siteData }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const router = useRouter();
   
-  const { site } = siteData || { site: { title: 'Self Cast Studios' } };
+  const { site } = siteData || { site: { title: 'Annie Sicard' } };
   const branding = getBrandingInfo(siteData);
   
   // Navigation links with custom Projects label if available
@@ -69,12 +69,12 @@ const Header: React.FC<HeaderProps> = ({ siteData }) => {
               />
             </div>
           ) : (
-            <div className="w-10 h-10 bg-gradient-to-br from-selfcast-primary to-selfcast-accent rounded-full flex items-center justify-center text-white font-bold">
+            <div className="w-10 h-10 bg-gradient-to-br from-annie-primary to-annie-accent rounded-full flex items-center justify-center text-white font-bold">
               {(branding.siteTitle?.[0] || 'S').toUpperCase()}
             </div>
           )}
           <div>
-            <span className="text-xl font-heading font-bold text-selfcast-dark">{branding.siteTitle || 'Self Cast Studios'}</span>
+            <span className="text-xl font-heading font-bold text-annie-dark">{branding.siteTitle || 'Annie Sicard'}</span>
             {branding.siteTagline && (
               <span className="hidden md:block text-sm text-gray-600">{branding.siteTagline}</span>
             )}
@@ -87,10 +87,10 @@ const Header: React.FC<HeaderProps> = ({ siteData }) => {
             <Link 
               key={link.href} 
               href={link.href}
-              className={`font-medium transition-colors hover:text-selfcast-primary ${
+              className={`font-medium transition-colors hover:text-annie-primary ${
                 router.pathname === link.href
-                  ? 'text-selfcast-primary'
-                  : 'text-selfcast-dark'
+                  ? 'text-annie-primary'
+                  : 'text-annie-dark'
               }`}
             >
               {link.label}
@@ -101,7 +101,7 @@ const Header: React.FC<HeaderProps> = ({ siteData }) => {
         {/* Mobile Menu Button */}
         <button 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden text-selfcast-dark focus:outline-none"
+          className="md:hidden text-annie-dark focus:outline-none"
           aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? (
@@ -128,10 +128,10 @@ const Header: React.FC<HeaderProps> = ({ siteData }) => {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`block py-2 font-medium transition-colors hover:text-selfcast-primary ${
+                  className={`block py-2 font-medium transition-colors hover:text-annie-primary ${
                     router.pathname === link.href
-                      ? 'text-selfcast-primary'
-                      : 'text-selfcast-dark'
+                      ? 'text-annie-primary'
+                      : 'text-annie-dark'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
