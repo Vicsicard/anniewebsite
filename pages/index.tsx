@@ -233,12 +233,6 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
           
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8 md:p-12 shadow-lg">
-              <div className="inline-flex items-center justify-center w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-green-600 to-blue-600 rounded-full text-white">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
-                </svg>
-              </div>
-              
               <div className="prose prose-lg mx-auto">
                 <p className="text-xl text-gray-700 leading-relaxed mb-6">
                   Annie Sicard is a visionary environmental sustainability advocate whose decade-long journey has been defined by transforming complex environmental challenges into practical, impactful solutions. With over 10 years of hands-on experience developing and implementing carbon offset initiatives and renewable energy projects, she has established herself as a trusted leader in the sustainability space. Her expertise spans from designing comprehensive carbon offset programs for Fortune 500 companies to implementing community-scale renewable energy microgrids that serve hundreds of households.
