@@ -587,6 +587,37 @@ const FALLBACK_DATA = {
       description: 'Custom installation of professional multi-camera studio for live streaming',
       status: 'published'
     }
+  ],
+  
+  // Media assets
+  media: [
+    {
+      id: 'annie-profile-image',
+      filename: 'annie-profile.jpg',
+      alt: 'Annie Sicard Profile Picture',
+      url: 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3',
+      width: 800,
+      height: 800,
+      mimeType: 'image/jpeg'
+    },
+    {
+      id: 'annie-banner-1',
+      filename: 'annie-banner-1.jpg',
+      alt: 'Annie Sicard Environmental Work Banner',
+      url: 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3',
+      width: 1200,
+      height: 400,
+      mimeType: 'image/jpeg'
+    },
+    {
+      id: 'annie-banner-2',
+      filename: 'annie-banner-2.jpg',
+      alt: 'Annie Sicard Sustainability Projects Banner',
+      url: 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3',
+      width: 1200,
+      height: 400,
+      mimeType: 'image/jpeg'
+    }
   ]
 };
 
