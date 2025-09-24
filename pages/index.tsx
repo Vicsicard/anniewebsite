@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Layout from '../components/Layout';
 import { fetchSiteData } from '../utils/api';
 import ContentCard from '../components/ui/ContentCard';
+import SocialPostModal from '../components/ui/SocialPostModal';
 
 interface HomePageProps {
   siteData: any;
@@ -56,6 +57,8 @@ export async function getServerSideProps() {
 const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [clientError, setClientError] = useState<string | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedPost, setSelectedPost] = useState<any>(null);
   
   // Log when component mounts on client side
   useEffect(() => {
@@ -137,13 +140,11 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
 
   const { site, blogPosts = [], bioCards = [], quotes = [], socialPosts = [], media = [], projects = [] } = siteData;
   
-  // Find profile picture from media collection
-  const profilePicture = media.find((item: any) => 
-    item.alt?.toLowerCase().includes('profile') || 
-    item.alt?.toLowerCase().includes('avatar') ||
-    item.filename?.toLowerCase().includes('profile') ||
-    item.filename?.toLowerCase().includes('avatar')
-  );
+  // Use Annie's profile picture directly
+  const profilePicture = {
+    url: 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3',
+    alt: 'Annie Sicard - Environmental Sustainability Advocate'
+  };
   
   // Get bio information from bio cards
   const aboutMeCard = bioCards.find((card: any) => 
@@ -399,12 +400,18 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
                       new Date(socialPosts.find((post: any) => post.platform?.toLowerCase() === 'linkedin')?.publishedAt).toLocaleDateString() : 
                       'Recent'}
                   </span>
-                  <a href={socialPosts.find((post: any) => post.platform?.toLowerCase() === 'linkedin')?.link || 'https://linkedin.com'} 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     className="text-[#0077B5] text-sm font-medium hover:underline">
+                  <button
+                    onClick={() => {
+                      const post = socialPosts.find((post: any) => post.platform?.toLowerCase() === 'linkedin');
+                      if (post) {
+                        setSelectedPost(post);
+                        setModalOpen(true);
+                      }
+                    }}
+                    className="text-[#0077B5] text-sm font-medium hover:underline cursor-pointer"
+                  >
                     View Post
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -430,12 +437,18 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
                       new Date(socialPosts.find((post: any) => post.platform?.toLowerCase() === 'instagram')?.publishedAt).toLocaleDateString() : 
                       'Recent'}
                   </span>
-                  <a href={socialPosts.find((post: any) => post.platform?.toLowerCase() === 'instagram')?.link || 'https://instagram.com'} 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     className="text-[#E1306C] text-sm font-medium hover:underline">
+                  <button
+                    onClick={() => {
+                      const post = socialPosts.find((post: any) => post.platform?.toLowerCase() === 'instagram');
+                      if (post) {
+                        setSelectedPost(post);
+                        setModalOpen(true);
+                      }
+                    }}
+                    className="text-[#E1306C] text-sm font-medium hover:underline cursor-pointer"
+                  >
                     View Post
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -461,12 +474,18 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
                       new Date(socialPosts.find((post: any) => post.platform?.toLowerCase() === 'facebook')?.publishedAt).toLocaleDateString() : 
                       'Recent'}
                   </span>
-                  <a href={socialPosts.find((post: any) => post.platform?.toLowerCase() === 'facebook')?.link || 'https://facebook.com'} 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     className="text-[#1877F2] text-sm font-medium hover:underline">
+                  <button
+                    onClick={() => {
+                      const post = socialPosts.find((post: any) => post.platform?.toLowerCase() === 'facebook');
+                      if (post) {
+                        setSelectedPost(post);
+                        setModalOpen(true);
+                      }
+                    }}
+                    className="text-[#1877F2] text-sm font-medium hover:underline cursor-pointer"
+                  >
                     View Post
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -492,12 +511,18 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
                       new Date(socialPosts.find((post: any) => post.platform?.toLowerCase() === 'twitter')?.publishedAt).toLocaleDateString() : 
                       'Recent'}
                   </span>
-                  <a href={socialPosts.find((post: any) => post.platform?.toLowerCase() === 'twitter')?.link || 'https://twitter.com'} 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     className="text-[#1DA1F2] text-sm font-medium hover:underline">
+                  <button
+                    onClick={() => {
+                      const post = socialPosts.find((post: any) => post.platform?.toLowerCase() === 'twitter');
+                      if (post) {
+                        setSelectedPost(post);
+                        setModalOpen(true);
+                      }
+                    }}
+                    className="text-[#1DA1F2] text-sm font-medium hover:underline cursor-pointer"
+                  >
                     View Post
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -515,14 +540,23 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
       <section className="py-20 bg-gradient-to-br from-annie-primary to-annie-accent text-white">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to elevate your media presence?</h2>
-            <p className="text-xl mb-8 opacity-90">Contact our team today for professional podcast and media production services.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to transform your sustainability journey?</h2>
+            <p className="text-xl mb-8 opacity-90">Contact Annie today to develop impactful environmental strategies that benefit both your organization and our planet.</p>
             <Link href="/contact" className="px-8 py-4 bg-white text-annie-primary font-medium rounded-md hover:bg-opacity-90 transition-all shadow-lg inline-block">
               Get Started
             </Link>
           </div>
         </div>
       </section>
+
+      {/* Social Post Modal */}
+      {selectedPost && (
+        <SocialPostModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          post={selectedPost}
+        />
+      )}
     </Layout>
   );
 };

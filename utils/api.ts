@@ -119,8 +119,8 @@ const FALLBACK_DATA = {
         ctaText: 'View Projects',
         ctaLink: '/projects',
         image: {
-          url: '/images/hero-placeholder.jpg',
-          alt: 'Annie Sicard - Web Designer and Developer'
+          url: 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3',
+          alt: 'Annie Sicard - Environmental Sustainability Advocate'
         }
       },
       aboutSection: {
@@ -311,44 +311,44 @@ const FALLBACK_DATA = {
     {
       id: 'linkedin-1',
       platform: 'linkedin',
-      title: 'Podcast Production Tips',
-      excerpt: 'Just shared my top 5 podcast production tips that can transform your sound quality...',
-      content: 'Just shared my top 5 podcast production tips that can transform your sound quality. The right equipment and environment make all the difference! #PodcastProduction #AudioTips',
+      title: 'Carbon Offset Strategies for Businesses',
+      excerpt: 'Just shared my top 5 carbon offset strategies that can transform your business sustainability...',
+      content: 'Just shared my top 5 carbon offset strategies that can transform your business sustainability. The right approach and implementation make all the difference! From renewable energy credits to verified carbon standard projects, these strategies can help companies of all sizes reduce their environmental impact while improving their bottom line. #CarbonNeutrality #SustainableBusiness #ClimateAction',
       publishedAt: '2025-05-01T14:30:00Z',
-      link: 'https://linkedin.com/in/selfcaststudios/posts/1',
+      link: 'https://linkedin.com/in/anniesicard/posts/1',
       status: 'published',
       featured: true
     },
     {
       id: 'linkedin-2',
       platform: 'linkedin',
-      title: 'Client Success Story',
-      excerpt: 'Excited to share our latest client success story. The Business Leadership podcast...',
-      content: 'Excited to share our latest client success story. The Business Leadership podcast we produced has reached 100,000 downloads in just two months! Proper production and marketing strategy pays off. #PodcastSuccess #ClientWin',
+      title: 'Corporate Sustainability Success Story',
+      excerpt: 'Excited to share our latest client success story. Their carbon neutrality program has...',
+      content: 'Excited to share our latest client success story. Their carbon neutrality program has reduced emissions by 45% in just one year while generating significant cost savings through energy efficiency. This demonstrates how sustainability and profitability can go hand in hand when properly implemented. #SustainabilitySuccess #GreenBusiness #CarbonReduction',
       publishedAt: '2025-04-28T10:15:00Z',
-      link: 'https://linkedin.com/in/selfcaststudios/posts/2',
+      link: 'https://linkedin.com/in/anniesicard/posts/2',
       status: 'published',
       featured: false
     },
     {
       id: 'linkedin-3',
       platform: 'linkedin',
-      title: 'Industry Recognition',
-      excerpt: 'Honored to receive the Industry Excellence Award for our podcast production services...',
-      content: 'Honored to receive the Industry Excellence Award for our podcast production services this year. Thank you to all our amazing clients who trust us with their audio content. #IndustryAward #PodcastProduction',
+      title: 'Sustainability Leadership Award',
+      excerpt: 'Honored to receive the Sustainability Leadership Award for our environmental impact assessment tools...',
+      content: 'Honored to receive the Sustainability Leadership Award for our innovative environmental impact assessment tools. These tools have helped dozens of organizations measure, track, and reduce their carbon footprint with unprecedented accuracy. Thank you to all our amazing clients who trust us with their sustainability journeys. #SustainabilityAward #EnvironmentalLeadership #GreenInnovation',
       publishedAt: '2025-04-20T16:45:00Z',
-      link: 'https://linkedin.com/in/selfcaststudios/posts/3',
+      link: 'https://linkedin.com/in/anniesicard/posts/3',
       status: 'published',
       featured: false
     },
     {
       id: 'linkedin-4',
       platform: 'linkedin',
-      title: 'New Studio Equipment',
-      excerpt: 'Just upgraded our recording studio with state-of-the-art equipment...',
-      content: 'Just upgraded our recording studio with state-of-the-art equipment! Our new soundproofing and premium microphones will take podcast quality to the next level. Book a tour to see it in person! #StudioUpgrade #RecordingEquipment',
+      title: 'New Renewable Energy Project Launch',
+      excerpt: 'Just launched our newest community solar project with an innovative financing model...',
+      content: 'Just launched our newest community solar project with an innovative financing model that makes renewable energy accessible to low-income communities! This 2.5MW installation will provide clean energy to over 400 households while creating local jobs and reducing carbon emissions by approximately 2,000 tons annually. #RenewableEnergy #CommunitySolar #CleanEnergyTransition',
       publishedAt: '2025-04-15T11:30:00Z',
-      link: 'https://linkedin.com/in/selfcaststudios/posts/4',
+      link: 'https://linkedin.com/in/anniesicard/posts/4',
       status: 'published',
       featured: false
     },
@@ -357,44 +357,44 @@ const FALLBACK_DATA = {
     {
       id: 'twitter-1',
       platform: 'twitter',
-      title: 'Quick Tip',
-      excerpt: 'Quick tip for podcasters: Always record in a quiet room with soft surfaces...',
-      content: 'Quick tip for podcasters: Always record in a quiet room with soft surfaces to reduce echo. Your listeners will thank you! #PodcastTips #AudioQuality',
+      title: 'Quick Sustainability Tip',
+      excerpt: 'Quick tip for businesses: Conduct an energy audit to identify quick wins for reducing carbon footprint...',
+      content: 'Quick tip for businesses: Conduct an energy audit to identify quick wins for reducing carbon footprint. Simple changes like LED lighting and smart thermostats can reduce emissions AND save money! #SustainabilityTip #GreenBusiness #CarbonFootprint',
       publishedAt: '2025-05-02T09:20:00Z',
-      link: 'https://twitter.com/selfcaststudios/status/1',
+      link: 'https://twitter.com/anniesicard/status/1',
       status: 'published',
       featured: true
     },
     {
       id: 'twitter-2',
       platform: 'twitter',
-      title: 'New Episode Alert',
-      excerpt: 'New episode of our behind-the-scenes podcast just dropped! Learn how we produce...',
-      content: 'New episode of our behind-the-scenes podcast just dropped! Learn how we produce award-winning shows from start to finish. Link in bio. #BehindTheScenes #PodcastProduction',
+      title: 'New Research Publication',
+      excerpt: 'Just published our latest white paper on the economic benefits of sustainable business practices...',
+      content: 'Just published our latest white paper on the economic benefits of sustainable business practices! Our research shows that companies with strong ESG performance outperform peers by an average of 11% over five years. Download the full report from our website. #SustainabilityResearch #GreenEconomy #ClimateAction',
       publishedAt: '2025-04-30T13:45:00Z',
-      link: 'https://twitter.com/selfcaststudios/status/2',
+      link: 'https://twitter.com/anniesicard/status/2',
       status: 'published',
       featured: false
     },
     {
       id: 'twitter-3',
       platform: 'twitter',
-      title: 'Industry Event',
-      excerpt: 'Heading to PodcastCon next week! Who else will be there?...',
-      content: 'Heading to PodcastCon next week! Who else will be there? Let\'s connect and talk about the future of audio content. #PodcastCon2025 #Networking',
+      title: 'Sustainability Conference',
+      excerpt: 'Heading to the Global Climate Action Summit next week! Who else will be there?...',
+      content: 'Heading to the Global Climate Action Summit next week! I will be speaking on innovative financing models for community renewable energy projects. Who else will be there? Let\'s connect and discuss collaborative approaches to climate challenges. #ClimateConference #SustainabilityEvent #GreenNetworking',
       publishedAt: '2025-04-25T08:30:00Z',
-      link: 'https://twitter.com/selfcaststudios/status/3',
+      link: 'https://twitter.com/anniesicard/status/3',
       status: 'published',
       featured: false
     },
     {
       id: 'twitter-4',
       platform: 'twitter',
-      title: 'Poll Results',
-      excerpt: 'Poll results are in! 78% of you prefer longer, in-depth podcast episodes...',
-      content: 'Poll results are in! 78% of you prefer longer, in-depth podcast episodes over shorter ones. Quality content wins! Thanks for voting. #PodcastPolls #ContentStrategy',
+      title: 'Sustainability Survey Results',
+      excerpt: 'Survey results are in! 82% of businesses see sustainability as a competitive advantage...',
+      content: 'Survey results are in! 82% of businesses now see sustainability as a competitive advantage rather than just a compliance issue. The shift from "nice to have" to "must have" is happening across industries. Thanks to all who participated in our research. #SustainabilityTrends #GreenBusinessStats #ClimateAction',
       publishedAt: '2025-04-22T15:10:00Z',
-      link: 'https://twitter.com/selfcaststudios/status/4',
+      link: 'https://twitter.com/anniesicard/status/4',
       status: 'published',
       featured: false
     },
@@ -403,44 +403,44 @@ const FALLBACK_DATA = {
     {
       id: 'instagram-1',
       platform: 'instagram',
-      title: 'Studio Tour',
-      excerpt: 'Take a virtual tour of our newly renovated podcast studio! Swipe to see all the...',
-      content: 'Take a virtual tour of our newly renovated podcast studio! Swipe to see all the new equipment and soundproofing we\'ve installed to create the perfect recording environment. Book your session now! #StudioTour #PodcastStudio #RecordingSpace',
+      title: 'Renewable Energy Site Tour',
+      excerpt: 'Take a virtual tour of our newest community solar installation! Swipe to see all the...',
+      content: 'Take a virtual tour of our newest community solar installation! Swipe to see the 2.5MW solar array, battery storage system, and community education center we\'ve built. This project will provide clean energy to over 400 households and reduce carbon emissions by approximately 2,000 tons annually. #RenewableEnergy #SolarPower #CleanEnergyTransition',
       publishedAt: '2025-05-03T16:00:00Z',
-      link: 'https://instagram.com/p/selfcaststudios1',
+      link: 'https://instagram.com/p/anniesicard1',
       status: 'published',
       featured: true
     },
     {
       id: 'instagram-2',
       platform: 'instagram',
-      title: 'Behind The Scenes',
-      excerpt: 'Behind the scenes with our latest client recording their debut podcast episode...',
-      content: 'Behind the scenes with our latest client recording their debut podcast episode! So exciting to help bring new voices to the podcasting world. #BehindTheScenes #NewPodcast #FirstEpisode',
+      title: 'Behind The Scenes: Sustainable Agriculture',
+      excerpt: 'Behind the scenes at River Valley Farm as they implement regenerative agriculture practices...',
+      content: 'Behind the scenes at River Valley Farm as they implement regenerative agriculture practices! Their transition to no-till farming, cover crops, and rotational grazing has increased soil carbon sequestration by 40% while improving crop yields. So exciting to see these sustainable methods in action. #RegenerativeAgriculture #SustainableFarming #ClimateAction',
       publishedAt: '2025-04-29T14:20:00Z',
-      link: 'https://instagram.com/p/selfcaststudios2',
+      link: 'https://instagram.com/p/anniesicard2',
       status: 'published',
       featured: false
     },
     {
       id: 'instagram-3',
       platform: 'instagram',
-      title: 'Equipment Showcase',
-      excerpt: 'Our favorite microphones for different podcast styles and budgets...',
-      content: 'Our favorite microphones for different podcast styles and budgets! Swipe through to see our recommendations for beginners, intermediate podcasters, and professionals. Drop a comment with questions! #MicrophoneReview #PodcastEquipment #AudioGear',
+      title: 'Green Technology Showcase',
+      excerpt: 'Our favorite green technologies for environmental monitoring and carbon reduction...',
+      content: 'Our favorite green technologies for environmental monitoring and carbon reduction! Swipe through to see cutting-edge solutions for businesses of all sizes - from AI-powered energy optimization systems to affordable carbon accounting software. Drop a comment with questions about implementing these in your organization! #GreenTech #CleanTech #SustainableInnovation',
       publishedAt: '2025-04-24T11:45:00Z',
-      link: 'https://instagram.com/p/selfcaststudios3',
+      link: 'https://instagram.com/p/anniesicard3',
       status: 'published',
       featured: false
     },
     {
       id: 'instagram-4',
       platform: 'instagram',
-      title: 'Team Photo',
-      excerpt: 'Meet Annie Sicard! I\'m passionate about...',
-      content: 'Meet Annie Sicard! I\'m passionate about creating beautiful digital experiences that engage and delight users. Book a consultation with me today! #WebDesign #UXDesign #DigitalCreator',
+      title: 'Field Research Team',
+      excerpt: 'Meet our field research team! We\'re passionate about gathering accurate environmental data...',
+      content: 'Meet our field research team! We\'re passionate about gathering accurate environmental data to inform sustainability decisions. Here we are conducting soil carbon measurements at one of our agricultural research sites. The data we collect helps farmers optimize their practices for both productivity and carbon sequestration. #EnvironmentalScience #Sustainability #FieldResearch',
       publishedAt: '2025-04-18T09:30:00Z',
-      link: 'https://instagram.com/p/selfcaststudios4',
+      link: 'https://instagram.com/p/anniesicard4',
       status: 'published',
       featured: false
     },
@@ -449,44 +449,44 @@ const FALLBACK_DATA = {
     {
       id: 'facebook-1',
       platform: 'facebook',
-      title: 'Workshop Announcement',
-      excerpt: 'Excited to announce our upcoming Podcast Launch Workshop on May 15th!...',
-      content: 'Excited to announce our upcoming Podcast Launch Workshop on May 15th! Learn everything you need to know to start your podcast from concept to launch. Early bird tickets available now - link in comments! #PodcastWorkshop #LaunchYourPodcast #ContentCreation',
+      title: 'Sustainability Workshop Announcement',
+      excerpt: 'Excited to announce our upcoming Carbon Neutrality Workshop for Businesses on May 15th!...',
+      content: 'Excited to announce our upcoming Carbon Neutrality Workshop for Businesses on May 15th! Learn practical strategies to measure, reduce, and offset your organization\'s carbon footprint. This hands-on session will provide actionable steps for businesses of all sizes. Early bird registration available now - link in comments! #SustainabilityWorkshop #CarbonNeutral #GreenBusiness',
       publishedAt: '2025-05-04T10:00:00Z',
-      link: 'https://facebook.com/selfcaststudios/posts/1',
+      link: 'https://facebook.com/anniesicard/posts/1',
       status: 'published',
       featured: true
     },
     {
       id: 'facebook-2',
       platform: 'facebook',
-      title: 'Client Testimonial',
-      excerpt: 'Sharing this wonderful testimonial from our client Sarah of The Marketing Mindset Podcast...',
-      content: 'Sharing this wonderful testimonial from my client Sarah of The Marketing Mindset: "Working with Annie transformed my website from amateur to professional. The design is amazing, and her guidance on content strategy helped me grow my audience by 400% in just three months!" #ClientTestimonial #WebDesign #DigitalSuccess',
+      title: 'Client Sustainability Transformation',
+      excerpt: 'Sharing this wonderful testimonial from our client EcoTech Manufacturing about their sustainability journey...',
+      content: 'Sharing this wonderful testimonial from our client EcoTech Manufacturing: "Working with Annie transformed our approach to sustainability. Her comprehensive assessment identified opportunities we had missed, and her implementation strategy helped us reduce our carbon footprint by 35% while generating significant energy cost savings. The ROI on our sustainability investments exceeded our expectations within the first year!" #ClientTestimonial #SustainabilitySuccess #GreenTransformation',
       publishedAt: '2025-04-27T15:30:00Z',
-      link: 'https://facebook.com/selfcaststudios/posts/2',
+      link: 'https://facebook.com/anniesicard/posts/2',
       status: 'published',
       featured: false
     },
     {
       id: 'facebook-3',
       platform: 'facebook',
-      title: 'Production Tips',
-      excerpt: 'Check out our latest blog post: "10 Post-Production Techniques That Will Elevate Your Podcast"...',
-      content: 'Check out our latest blog post: "10 Post-Production Techniques That Will Elevate Your Podcast" - learn how professional editing, sound design, and mixing can transform your show. Link in comments! #PostProduction #PodcastEditing #AudioTips',
+      title: 'Sustainable Business Practices',
+      excerpt: 'Check out our latest blog post: "10 Sustainable Business Practices That Will Reduce Your Environmental Impact"...',
+      content: 'Check out our latest blog post: "10 Sustainable Business Practices That Will Reduce Your Environmental Impact" - learn how simple operational changes, supply chain optimizations, and employee engagement can transform your organization\'s sustainability profile. These practical strategies can be implemented by businesses of any size. Link in comments! #SustainableBusiness #GreenPractices #EnvironmentalLeadership',
       publishedAt: '2025-04-23T12:15:00Z',
-      link: 'https://facebook.com/selfcaststudios/posts/3',
+      link: 'https://facebook.com/anniesicard/posts/3',
       status: 'published',
       featured: false
     },
     {
       id: 'facebook-4',
       platform: 'facebook',
-      title: 'Special Offer',
-      excerpt: 'Spring special! Book a podcast production package this month and get a free...',
-      content: 'Spring special! Book a podcast production package this month and get a free consultation on audience growth and monetization strategies. Limited spots available - contact us today! #SpecialOffer #PodcastProduction #ContentStrategy',
+      title: 'Sustainability Assessment Offer',
+      excerpt: 'Spring special! Book a comprehensive sustainability assessment this month and get a free...',
+      content: 'Spring special! Book a comprehensive sustainability assessment this month and get a free carbon reduction strategy session. Our assessment includes energy usage analysis, waste audit, supply chain evaluation, and detailed recommendations with ROI calculations. Limited spots available - contact us today to start your sustainability journey! #SustainabilityAssessment #GreenBusiness #EnvironmentalConsulting',
       publishedAt: '2025-04-16T14:00:00Z',
-      link: 'https://facebook.com/selfcaststudios/posts/4',
+      link: 'https://facebook.com/anniesicard/posts/4',
       status: 'published',
       featured: false
     }
@@ -586,37 +586,6 @@ const FALLBACK_DATA = {
       slug: 'multi-camera-podcast-setup',
       description: 'Custom installation of professional multi-camera studio for live streaming',
       status: 'published'
-    }
-  ],
-  
-  // Media assets
-  media: [
-    {
-      id: 'annie-profile-image',
-      filename: 'annie-profile.jpg',
-      alt: 'Annie Sicard Profile Picture',
-      url: 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3',
-      width: 800,
-      height: 800,
-      mimeType: 'image/jpeg'
-    },
-    {
-      id: 'annie-banner-1',
-      filename: 'annie-banner-1.jpg',
-      alt: 'Annie Sicard Environmental Work Banner',
-      url: 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3',
-      width: 1200,
-      height: 400,
-      mimeType: 'image/jpeg'
-    },
-    {
-      id: 'annie-banner-2',
-      filename: 'annie-banner-2.jpg',
-      alt: 'Annie Sicard Sustainability Projects Banner',
-      url: 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3',
-      width: 1200,
-      height: 400,
-      mimeType: 'image/jpeg'
     }
   ]
 };

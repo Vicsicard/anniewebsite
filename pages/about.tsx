@@ -35,8 +35,14 @@ export async function getServerSideProps() {
 const AboutPage: React.FC<AboutPageProps> = ({ siteData }) => {
   const { site, media } = siteData;
   
+  // Debug logging
+  console.log('🔍 About Page - siteData:', siteData);
+  console.log('🔍 About Page - site:', site);
+  console.log('🔍 About Page - site.about:', site?.about);
+  
   // Use the new about structure if available, otherwise fallback to legacy structure
   const aboutData = site?.about || {};
+  console.log('🔍 About Page - aboutData:', aboutData);
   
   // Handle profile picture - either from the new structure or find from media collection
   let profilePicture = aboutData.profileImage;
@@ -72,22 +78,14 @@ const AboutPage: React.FC<AboutPageProps> = ({ siteData }) => {
             {/* Profile Column */}
             <div className="md:col-span-1 space-y-8">
               <div className="flex justify-center">
-                {profilePicture ? (
-                  <div className="relative w-64 h-64 rounded-lg overflow-hidden shadow-xl">
-                    <Image 
-                      src={profilePicture.url} 
-                      alt={profilePicture.alt || 'Profile picture'} 
-                      layout="fill" 
-                      objectFit="cover"
-                    />
-                  </div>
-                ) : (
-                  <div className="w-64 h-64 rounded-lg bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-                    <svg className="w-24 h-24 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                )}
+                <div className="relative w-64 h-64 rounded-lg overflow-hidden shadow-xl">
+                  <Image 
+                    src={profilePicture?.url || 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3'} 
+                    alt={profilePicture?.alt || 'Annie Sicard - Environmental Sustainability Advocate'} 
+                    layout="fill" 
+                    objectFit="cover"
+                  />
+                </div>
               </div>
               
               {/* Contact Information */}
