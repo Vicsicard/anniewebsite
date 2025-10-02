@@ -35,7 +35,7 @@ const Header: React.FC<HeaderProps> = ({ siteData }) => {
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/blog', label: 'Blog' },
-    { href: '/projects', label: projectsLabel },
+    // { href: '/projects', label: projectsLabel }, // Temporarily removed
     { href: '/social', label: 'Social' },
     { href: '/contact', label: 'Contact' }
   ];
