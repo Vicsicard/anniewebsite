@@ -82,8 +82,8 @@ const AboutPage: React.FC<AboutPageProps> = ({ siteData }) => {
                   <Image 
                     src={profilePicture?.url || 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3'} 
                     alt={profilePicture?.alt || 'Annie Sicard - Environmental Sustainability Advocate'} 
-                    layout="fill" 
-                    objectFit="cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
               </div>
