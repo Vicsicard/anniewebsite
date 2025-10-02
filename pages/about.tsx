@@ -44,17 +44,11 @@ const AboutPage: React.FC<AboutPageProps> = ({ siteData }) => {
   const aboutData = site?.about || {};
   console.log('🔍 About Page - aboutData:', aboutData);
   
-  // Handle profile picture - either from the new structure or find from media collection
-  let profilePicture = aboutData.profileImage;
-  if (!profilePicture && media) {
-    // Fallback to searching in media collection if needed
-    profilePicture = media.find((item: any) => 
-      item.alt?.toLowerCase().includes('profile') || 
-      item.alt?.toLowerCase().includes('avatar') ||
-      item.filename?.toLowerCase().includes('profile') ||
-      item.filename?.toLowerCase().includes('avatar')
-    );
-  }
+  // Use Annie's profile picture directly (same as homepage)
+  const profilePicture = {
+    url: 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3',
+    alt: 'Annie Sicard - Environmental Sustainability Advocate'
+  };
 
   return (
     <StandardLayout 
@@ -80,8 +74,8 @@ const AboutPage: React.FC<AboutPageProps> = ({ siteData }) => {
               <div className="flex justify-center">
                 <div className="relative w-64 h-64 rounded-lg overflow-hidden shadow-xl">
                   <Image 
-                    src={profilePicture?.url || 'https://imagestopost.carrd.co/assets/images/image07.jpg?v=911794d3'} 
-                    alt={profilePicture?.alt || 'Annie Sicard - Environmental Sustainability Advocate'} 
+                    src={profilePicture.url} 
+                    alt={profilePicture.alt} 
                     fill
                     className="object-cover"
                   />
