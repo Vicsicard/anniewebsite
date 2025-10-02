@@ -310,7 +310,7 @@ const HomePage: React.FC<HomePageProps> = ({ siteData, error }) => {
                   key={post.id || index}
                   title={post.title || 'Untitled Post'}
                   excerpt={post.excerpt || post.content?.substring(0, 100) || 'No description available'}
-                  slug={`/blog/${post.slug || post.id}`}
+                  slug={post.slug || post.id}
                   date={post.publishedAt || post.createdAt}
                   author={post.author}
                   imageSrc={post.featuredImage?.url || '/images/default-post.jpg'}

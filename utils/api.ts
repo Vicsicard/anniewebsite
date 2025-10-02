@@ -495,36 +495,256 @@ const FALLBACK_DATA = {
   blogPosts: [
     {
       id: 'post-1',
-      title: 'The Business Case for Carbon Neutrality',
-      slug: 'business-case-carbon-neutrality',
-      content: 'Many businesses view carbon offset initiatives as purely altruistic endeavors, but the reality is that sustainability can significantly improve your bottom line. From energy cost savings to enhanced brand reputation and customer loyalty, this article explores the tangible business benefits of pursuing carbon neutrality...',
-      excerpt: 'Discover how carbon neutrality can benefit your business beyond environmental impact.',
-      publishedAt: new Date().toISOString(),
+      title: 'CWNYC25: Why the Voluntary Carbon Market Must Hold the Line Until Policy Returns',
+      slug: 'voluntary-carbon-market-climate-week-nyc-2025',
+      content: `Introduction
+
+One headline from Climate Week NYC 2025 caught my attention: a U.S. lawmaker argued that the voluntary carbon market must step up to drive carbon removal in the U.S. until the political pendulum swings back.
+
+It's a reminder of something I've seen time and again: when policy falters, markets often become the bridge. And while the voluntary carbon market is far from perfect, its role in sustaining momentum for carbon removal is becoming harder to ignore.
+
+
+The Current Landscape
+
+Here's the reality the Congressman was pointing to:
+
+U.S. climate policy is uneven, shifting with political winds. That leaves carbon removal projects exposed to funding gaps and uncertainty.
+
+The voluntary carbon market (VCM), though historically seen as a complement to regulation, is increasingly the front line for financing carbon removal.
+
+Legal and financial experts at CWNYC highlighted that treating carbon credits as environmental commodities—tradeable, transparent, and finance-ready—could make them more scalable.
+
+Quality remains the challenge: the VCM has been criticized for inconsistent standards, uneven verification, and credibility gaps.
+
+So the question isn't whether the voluntary market can replace policy—it can't—but whether it can keep carbon removal moving forward during political swings.
+
+
+My Thoughts
+
+It's understood that voluntary markets are not a cure-all. But it is as a practical lever to keep ambition alive in moments when politics slows us down.
+
+Critics are right: there are plenty of credits that lack integrity, permanence, or transparency. But I've also seen the upside when companies invest in high-quality, removal-based projects that deliver co-benefits—restored forests, healthier soils, stronger rural economies. That's where the voluntary market can shine.
+
+For me, the bigger takeaway is this: climate progress isn't linear. Policy support will ebb and flow. What matters is having systems—markets, incentives, corporate commitments—that don't stall every time politics does.
+
+
+Practical Pathways
+
+For organizations navigating this space, a few priorities stand out:
+
+1. Focus on integrity, not volume
+Invest in projects with strong MRV (measurement, reporting, verification), permanence, and co-benefits. Avoid the temptation of cheap credits.
+
+2. Support infrastructure improvements
+Engage with efforts to standardize and "commoditize" credits—because credible, transparent credits will help the VCM mature.
+
+3. Treat removals as part of the hierarchy
+Remember the emissions reduction hierarchy: avoid → reduce → substitute → offset. Voluntary removal credits should complement, not replace, deep internal decarbonization.
+
+4. Build resilience into strategy
+Don't tie your climate commitments to political cycles. Use voluntary markets to keep progress steady, even when policy is uncertain.
+
+
+Conclusion & Takeaway
+
+The message from CWNYC25 was clear: the voluntary carbon market can't be a sideline player anymore. Until U.S. policy regains momentum, it must be robust enough to carry carbon removal forward.
+
+For companies, this is a call to act with discernment—supporting high-quality projects, helping strengthen market standards, and making sure that voluntary action doesn't become a placeholder, but a bridge to stronger policy in the future.
+
+
+SEO FAQs
+
+Q1: Why is the voluntary carbon market important right now?
+Because it can fund carbon removal projects even when U.S. policy support weakens, keeping climate ambition on track.
+
+Q2: What makes a carbon credit "high quality"?
+Strong verification, permanence, transparency, and co-benefits like biodiversity and community resilience.
+
+Q3: How should companies use voluntary carbon credits?
+As a complement to internal emissions reductions—especially for Scope 3—while ensuring credits are part of a long-term net zero pathway.`,
+      excerpt: 'At Climate Week NYC, a lawmaker urged the voluntary carbon market to carry U.S. climate ambition until political support for carbon removal returns.',
+      publishedAt: '2025-05-15T10:00:00Z',
       status: 'published',
-      category: 'Carbon Offsets',
-      featuredImage: { url: '/images/carbon-neutrality.jpg' }
+      category: 'Carbon Markets',
+      author: 'Annie Sicard',
+      featuredImage: { 
+        url: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&q=80',
+        alt: 'New York City skyline during Climate Week'
+      }
     },
     {
       id: 'post-2',
-      title: 'Renewable Energy: Myths vs. Reality',
-      slug: 'renewable-energy-myths-reality',
-      content: 'Despite the growing adoption of renewable energy technologies, misconceptions persist about their reliability, cost, and practicality. This article addresses the most common myths surrounding solar, wind, and other renewable energy sources, providing evidence-based perspectives on their current capabilities and limitations...',
-      excerpt: 'Separating fact from fiction in the renewable energy conversation.',
-      publishedAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
+      title: 'Farmer-Led Carbon Reduction: Transforming Rural Livelihoods in Zambia',
+      slug: 'farmer-led-carbon-reduction-zambia',
+      content: `Introduction
+
+When we talk about climate action, it's easy to picture global pledges and corporate strategies. But some of the most inspiring solutions are happening far from conference halls. In Zambia, a farmer-led carbon reduction project is showing how community leadership can restore ecosystems, reduce emissions, and build stronger rural livelihoods—all at the same time. By 2030, it's expected to remove 2 million tonnes of CO₂ each year while supporting 240,000 Zambians.
+
+
+Who's Behind the Project?
+
+This effort, called the Ecopreneur Movement – Miombo Woodland Restoration Project, was developed by Community Climate Solutions (CCS) and brought to market by Climate Impact Partners. But the real drivers are the farmers themselves.
+
+Local farmers, trained as "Ecopreneurs," are:
+
+Restoring degraded Miombo Woodlands, one of Southern Africa's most important carbon sinks.
+
+Practicing sustainable farming techniques that keep soils healthy and productive.
+
+Working together on fire prevention to protect land, homes, and biodiversity.
+
+The beauty of this model is that it's not charity—it's a partnership. Farmers benefit directly, both financially and environmentally, while leading the restoration work themselves.
+
+
+Why This Matters
+
+The Miombo Woodlands stretch across much of Southern Africa, supporting millions of people and countless species. But decades of deforestation, overgrazing, and uncontrolled fires have taken a toll. That's why this project stands out:
+
+Carbon impact: Removing up to 2 million tonnes of CO₂ annually by 2030.
+
+Economic resilience: Farmers gain new income from climate finance and more stable harvests.
+
+Biodiversity benefits: Woodlands shelter wildlife, improve water cycles, and protect soils.
+
+Community scale: With 240,000 participants, this isn't a small pilot—it's a movement.
+
+
+My Thoughts
+
+What excites me most is that farmers are in the driver's seat. Too often, carbon projects are designed elsewhere and dropped into communities. Here, the knowledge, leadership, and benefits stay local.
+
+I've seen how skepticism around carbon markets can be valid—especially when offsets are used as a shortcut instead of a complement to real reductions. But this project is different. It's not just about credits; it's about restoring ecosystems and livelihoods at the same time. In my view, this is the type of climate finance we need more of: practical, impactful, and achievable.
+
+
+Practical Pathways
+
+So what can businesses learn from Zambia's Ecopreneur Movement? A few takeaways stand out:
+
+1. Look for co-benefits, not just credits
+The strongest projects cut emissions while also building resilience for people and ecosystems.
+
+2. Put farmers at the center
+In agriculture and forestry supply chains, those closest to the land often have the most effective solutions.
+
+3. Use projects to tackle Scope 3
+With Scope 3 emissions making up about 70% of corporate footprints, partnerships like this can reduce value chain risk while delivering measurable social impact.
+
+4. Think long-term
+Short-term offsets can be volatile. Supporting regenerative, community-led projects builds trust and lasting returns.
+
+
+Conclusion & Takeaway
+
+The Zambia Ecopreneur Movement is more than a carbon project—it's a story about what happens when climate solutions grow from the ground up. By combining woodland restoration, farmer leadership, and climate finance, it's proving that sustainability can transform both landscapes and livelihoods.
+
+For companies exploring carbon neutrality pathways, Scope 3 strategies, or regenerative agriculture investments, this is the kind of blueprint worth paying attention to—and scaling.
+
+
+SEO FAQs
+
+Q1: How does the Zambia carbon reduction project work?
+Farmers restore Miombo Woodlands by planting trees, improving soil health, and preventing fires. Their work generates verified carbon credits and strengthens rural economies.
+
+Q2: What makes farmer-led carbon projects effective?
+They embed local knowledge, create shared economic benefits, and deliver both climate and community outcomes, making them more durable than top-down approaches.
+
+Q3: How can companies support Scope 3 reductions through projects like this?
+By investing in farmer-led carbon initiatives, companies can reduce value chain emissions while also delivering social and biodiversity benefits.`,
+      excerpt: 'A farmer-led carbon project in Zambia is restoring woodlands, removing 2M tonnes CO₂ annually, and improving 240,000 rural livelihoods.',
+      publishedAt: '2025-04-28T14:30:00Z',
       status: 'published',
-      category: 'Renewable Energy',
-      featuredImage: { url: '/images/renewable-energy.jpg' }
+      category: 'Regenerative Agriculture',
+      author: 'Annie Sicard',
+      featuredImage: { 
+        url: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80',
+        alt: 'Farmers planting trees in African woodland restoration project'
+      }
     },
     {
       id: 'post-3',
-      title: 'Building Resilient Food Systems Through Sustainable Agriculture',
-      slug: 'resilient-food-systems-sustainable-agriculture',
-      content: 'Climate change poses unprecedented challenges to global food security. This article explores how sustainable and regenerative agricultural practices can build resilience in our food systems while simultaneously sequestering carbon and restoring ecosystem health...',
-      excerpt: 'How sustainable farming practices can ensure food security in a changing climate.',
-      publishedAt: new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString(),
+      title: 'Update from Climate Week NYC: AI\'s Emissions Effect',
+      slug: 'ai-emissions-climate-week-nyc',
+      content: `Introduction
+
+One question kept surfacing at Climate Week NYC: Will artificial intelligence derail corporate emissions strategies—or help accelerate them? It's a fair concern. With AI fueling massive data center expansion, the energy demands are real. But what I heard this week suggests the story isn't so simple.
+
+
+Who's Weighing In
+
+At a panel discussion, Josh Parker, NVIDIA's head of sustainability, made a bold claim: AI might actually reduce emissions by helping modernize the grid.
+
+"AI is helping us integrate renewables and batteries," he explained. "It can smooth out bottlenecks, making electrification more efficient."
+
+That's a striking perspective, given NVIDIA's outsized role in the AI ecosystem. Its chips are the backbone of cloud providers like Amazon Web Services, Google, and Microsoft—and the company just announced a $100 billion investment to accelerate OpenAI's infrastructure buildout.
+
+Still, NVIDIA is at the beginning of its own climate journey. It only validated its first science-based targets in 2025, and new partnerships, including one with Intel, will be critical to making progress.
+
+
+Why This Matters
+
+AI is often painted as either the climate villain or the silver bullet. The truth, as usual, is in the middle:
+
+Data centers are energy-intensive. If powered by fossil-heavy grids, emissions rise.
+
+AI enables optimization. From grid management to precision agriculture, AI can unlock efficiency gains.
+
+Corporate strategies are evolving. With Scope 2 and Scope 3 emissions under pressure, companies can't ignore AI's footprint—or its potential.
+
+In short: AI is reshaping the energy system, and companies need to understand both its risks and its opportunities.
+
+
+My Thoughts
+
+I think the wrong question is, "Will AI break my climate strategy?" The better one is, "How do I design a climate strategy that accounts for AI?"
+
+From what I've seen, AI is like any other disruptive technology: it magnifies both the good and the bad. If you're powering AI with fossil fuels, you've just scaled up your emissions problem. If you're integrating AI with renewables, microgrids, and smart electrification, you may actually accelerate your pathway to net zero.
+
+What excites me most are the possibilities for supply chain visibility and Scope 3 management. Imagine using AI to model emissions in real time across thousands of suppliers—or to identify the fastest, lowest-cost decarbonization levers. That's the kind of impact that goes beyond the hype.
+
+
+Practical Pathways
+
+Here's how I'd advise companies thinking about AI and sustainability:
+
+1. Map AI into your Scope 2 footprint
+If you're expanding digital workloads, make sure you know where the energy is coming from and how to secure renewable energy.
+
+2. Use AI for emissions intelligence
+Deploy AI tools to track Scope 3 emissions, optimize logistics, and identify hotspots faster than traditional methods.
+
+3. Demand climate leadership from tech partners
+Cloud providers and chip makers are part of your footprint. Choose partners with credible, science-based targets.
+
+4. Keep AI in the bigger picture
+Remember Parker's point: AI isn't the only load factor. Electrification of vehicles and industrial systems may reshape your footprint even more dramatically.
+
+
+Conclusion & Takeaway
+
+The conversation at Climate Week NYC reminded me: AI is neither the problem nor the solution—it's a tool. Whether it accelerates or hinders progress depends entirely on the energy systems we build and the strategies we design.
+
+For sustainability leaders, the task is clear: account for AI's footprint, leverage its optimization power, and demand transparency from tech providers. Done right, AI could be one of the most practical accelerators of corporate climate strategies.
+
+
+SEO FAQs
+
+Q1: Does AI increase corporate emissions?
+AI workloads are energy-intensive, but the impact depends on whether data centers are powered by renewable or fossil-heavy grids.
+
+Q2: How can AI help reduce emissions?
+AI can optimize grid operations, improve energy efficiency, and enhance supply chain emissions tracking, making corporate decarbonization strategies more effective.
+
+Q3: What should companies do about AI in their net zero plans?
+Companies should integrate AI into Scope 2 and Scope 3 planning, demand renewable energy commitments from tech providers, and use AI tools for emissions intelligence.`,
+      excerpt: 'AI is reshaping energy use and emissions. At Climate Week NYC, leaders explored whether AI will break—or accelerate—corporate climate strategies.',
+      publishedAt: '2025-05-10T09:15:00Z',
       status: 'published',
-      category: 'Sustainable Agriculture',
-      featuredImage: { url: '/images/sustainable-agriculture.jpg' }
+      category: 'Technology & Climate',
+      author: 'Annie Sicard',
+      featuredImage: { 
+        url: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80',
+        alt: 'Earth at night showing city lights and energy consumption from space'
+      }
     }
   ],
   bioCards: [
